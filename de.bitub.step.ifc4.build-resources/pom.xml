@@ -17,7 +17,7 @@
 		<xtext.version>2.7.2</xtext.version>	
 		<xcore.version>1.2.1</xcore.version>
 		<xcore.lib.version>1.1.0</xcore.lib.version>
-		<updatesiteLocal>${user.home}/.p2/repository/bitub/${targetPlatform}</updatesiteLocal>
+		<bitub.updatesiteLocal>${user.home}/.p2/repository/bitub/${targetPlatform}</bitub.updatesiteLocal>
 	</properties>
 
 	<scm>
@@ -167,16 +167,6 @@
 
 				<configuration>
 					<resolver>p2</resolver>
-					<!--
-					<target>
-						<artifact>
-							<groupId>de.bitub.step.ifc4</groupId>
-							<artifactId>Build</artifactId>
-							<version>${project.version}</version>
-							<classifier>de.bitub.step-${targetPlatform}</classifier>
-						</artifact>
-					</target>
-					-->
 					<environments>
 					
 						<environment>

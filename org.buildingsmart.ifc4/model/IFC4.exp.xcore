@@ -4,10 +4,12 @@
 @GenModel(
   forceOverwrite="true", 
   adapterFactory="false", 
+  updateClasspath="false",
+  complianceLevel="5.0",
+  optimizedHasChildren="true",
   modelDirectory="org.buildingsmart.ifc4/src-gen", 
   editProject="org.buildingsmart.ifc4.edit",
   editDirectory="org.buildingsmart.ifc4.edit/src-gen", 
-  generateEditProject="true",
   documentation="Generated EXPRESS model of schema IFC4")
 	 
 @XpressModel(name="IFC4",rootContainerClassRef="IFC4")		
