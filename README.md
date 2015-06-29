@@ -23,6 +23,6 @@ target platform is defined by the profile. By default it is set to "luna". Futur
 If you like to publish the artifacts to another folder (CI builds etc.) set up the build variable manually:
 
 ```
-	mvn -DupdatesiteLocal=<local writeable folder> clean install
+	mvn -Dbitub.updatesiteLocal=<local writeable folder> clean install
 ```
 
