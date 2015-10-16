@@ -7,7 +7,7 @@
   updateClasspath="false",
   complianceLevel="5.0",
   optimizedHasChildren="true",
-  modelDirectory="org.buildingsmart.ifc4/src-gen", 
+  modelDirectory="src-gen", 
   editProject="org.buildingsmart.ifc4.edit",
   editDirectory="org.buildingsmart.ifc4.edit/src-gen", 
   documentation="Generated EXPRESS model of schema IFC4")
