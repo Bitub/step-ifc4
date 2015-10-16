@@ -29,7 +29,6 @@
 	  <profile>
 		  <id>platform-luna</id>
 		  <activation>
-			<activeByDefault>true</activeByDefault>
 			<property>
 			  <name>platform-name</name>
 			  <value>luna</value>

@@ -10,11 +10,17 @@ mapping the EXPRESS specification (ISO 10303-11) to Xcore.
 
 ### P2 update site for Eclipse 
 
-Building manually for Eclipse Luna (default). This command will produce a local (default) update site.
+Building manually for Eclipse Mars (default). This command will produce a local (default) update site.
 
 ```
 	cd de.bitub.step.ifc4.build-resources
 	mvn clean install
+```
+
+or from project root 
+
+```
+	mvn clean install -P platform-mars -f de.bitub.step.ifc4.build-resources/pom.xml
 ```
 
 The repository will be mirrored to a local folder below user's profile in "./p2/repository/<targetplatform>" whereas the
@@ -25,4 +31,6 @@ If you like to publish the artifacts to another folder (CI builds etc.) set up t
 ```
 	mvn -Dbitub.updatesiteLocal=<local writeable folder> clean install
 ```
+
+The mirror task is associated with the <install> lifecycle step.
 
