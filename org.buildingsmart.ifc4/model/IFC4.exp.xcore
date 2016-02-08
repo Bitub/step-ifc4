@@ -5,7 +5,7 @@
   forceOverwrite="true", 
   adapterFactory="false", 
   updateClasspath="false",
-  complianceLevel="5.0",
+  complianceLevel="8.0",
   optimizedHasChildren="true",
   modelDirectory="src-gen", 
   editProject="org.buildingsmart.ifc4.edit",
