@@ -10,13 +10,12 @@
 	<name>de.bitub.step.ifc4 Build</name>
 	
 	<properties>
-		<tycho-version>0.22.0</tycho-version>
-		<tycho-extras-version>0.22.0</tycho-extras-version>
+		<tycho-version>0.24.0</tycho-version>
+		<tycho-extras-version>0.24.0</tycho-extras-version>
 		<tycho-groupid>org.eclipse.tycho</tycho-groupid>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>	
-		<xtext.version>2.7.2</xtext.version>	
-		<xcore.version>1.2.1</xcore.version>
-		<xcore.lib.version>1.1.0</xcore.lib.version>
+		<xtext.version>2.8.4</xtext.version>	
+		<xcore.version>1.3.1</xcore.version>
 		<bitub.updatesiteLocal>${user.home}/.p2/repository/bitub/${targetPlatform}</bitub.updatesiteLocal>
 	</properties>
 
@@ -30,7 +29,6 @@
 	  <profile>
 		  <id>platform-luna</id>
 		  <activation>
-			<activeByDefault>true</activeByDefault>
 			<property>
 			  <name>platform-name</name>
 			  <value>luna</value>
@@ -39,6 +37,21 @@
 		  <properties>
 			<targetPlatform>luna</targetPlatform>
 			<platformUsUrl>http://download.eclipse.org/releases/luna</platformUsUrl>
+		  </properties>
+      </profile>	
+
+	  <profile>
+		  <id>platform-mars</id>
+		  <activation>
+			<activeByDefault>true</activeByDefault>
+			<property>
+			  <name>platform-name</name>
+			  <value>mars</value>
+			</property>			
+		  </activation>
+		  <properties>
+			<targetPlatform>mars</targetPlatform>
+			<platformUsUrl>http://download.eclipse.org/releases/mars</platformUsUrl>
 		  </properties>
       </profile>	
 	  	  
@@ -58,8 +71,8 @@
 			<layout>p2</layout>
 		</repository>		
 		<repository>
-			<id>itemis</id>
-			<url>http://download.itemis.com/updates/releases</url>
+			<id>tmf</id>
+			<url>http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/</url>
 			<layout>p2</layout>
 		</repository>
 
