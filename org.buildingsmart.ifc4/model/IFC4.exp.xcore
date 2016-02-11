@@ -2,19 +2,14 @@
 @Import(ecore="http://www.eclipse.org/emf/2002/Ecore")
 @GenModel(copyrightText="Copyright (c) 2015 Bernold Kraft and others. (Berlin, Germany).\nAll rights reserved. This program and the accompanying materials\nare made available under the terms of the Eclipse Public License v1.0\nwhich accompanies this distribution, and is available at\n\nhttp://www.eclipse.org/legal/epl-v10.html\n\nInitial contributors:\n\n - Bernold Kraft,Sebastian Riemschüssel,Torsten Krämer")
 @GenModel(
-  forceOverwrite="true", 
   adapterFactory="false", 
-  updateClasspath="false",
   complianceLevel="8.0",
   optimizedHasChildren="true",
   basePackage="org.buildingsmart.ifc4",
   modelDirectory="/org.buildingsmart.ifc4/src-gen",
-  editProject="org.buildingsmart.ifc4.edit",
-  editDirectory="org.buildingsmart.ifc4.edit/src-gen", 
   documentation="Generated EXPRESS model of schema IFC4")
 	 
 @XpressModel(name="IFC4",rootContainerClassRef="IFC4")
-
 package org.buildingsmart.ifc4
 
 import org.eclipse.emf.ecore.EObject
