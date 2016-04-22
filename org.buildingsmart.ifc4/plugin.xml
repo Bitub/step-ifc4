@@ -11,7 +11,7 @@
       <package
             uri="http://www.bitub.de/IFC4"
             class="org.buildingsmart.ifc4.Ifc4Package"
-            genModel="model/IFC4.exp.xcore"/>
+            genModel="model/IFC4_ADD1.exp.xcore"/>
    </extension>
 
 </plugin>
