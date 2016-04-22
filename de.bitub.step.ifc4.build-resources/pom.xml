@@ -4,7 +4,7 @@
 	
 	<groupId>de.bitub.step.ifc4</groupId>
 	<artifactId>Build</artifactId>
-	<version>0.2.0-SNAPSHOT</version>
+	<version>0.3.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	
 	<name>de.bitub.step.ifc4 Build</name>
