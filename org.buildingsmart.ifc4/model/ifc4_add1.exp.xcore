@@ -16,7 +16,7 @@
 	optimizedHasChildren="true"
 )
 		
-// THIS FILE IS GENERATED (TIMESTAMP Thu Apr 21 12:15:17 CEST 2016). ANY CHANGE WILL BE LOST.
+// THIS FILE IS GENERATED (TIMESTAMP Fri Apr 22 10:24:56 CEST 2016). ANY CHANGE WILL BE LOST.
 
 
 @GenModel(documentation="Generated EXPRESS model of schema IFC4")
@@ -3599,45 +3599,274 @@ class IfcPropertySetDefinitionSet {
 // --- REFERENCED SELECTS ----------------------------
 
 
-@GenModel(documentation="<ul><li>{@link IFCCURVESTYLEFONT} as {@link IfcCurveStyleFont}</li>
-		<li>{@link IFCPREDEFINEDCURVEFONT} as {@link IfcPreDefinedCurveFont}</li></ul>")
+@GenModel(documentation="<ul><li>{@link IFCADDRESS} as {@link IfcAddress}</li>
+		<li>{@link IFCAPPLIEDVALUE} as {@link IfcAppliedValue}</li>
+		<li>{@link IFCEXTERNALREFERENCE} as {@link IfcExternalReference}</li>
+		<li>{@link IFCMATERIALDEFINITION} as {@link IfcMaterialDefinition}</li>
+		<li>{@link IFCORGANIZATION} as {@link IfcOrganization}</li>
+		<li>{@link IFCPERSON} as {@link IfcPerson}</li>
+		<li>{@link IFCPERSONANDORGANIZATION} as {@link IfcPersonAndOrganization}</li>
+		<li>{@link IFCTABLE} as {@link IfcTable}</li>
+		<li>{@link IFCTIMESERIES} as {@link IfcTimeSeries}</li></ul>")
 @XpressModel(kind="new")
-enum EnumIfcCurveStyleFontSelect {
-	IFCCURVESTYLEFONT = 0,
-	IFCPREDEFINEDCURVEFONT = 1
+enum EnumIfcObjectReferenceSelect {
+	IFCADDRESS = 6,
+	IFCAPPLIEDVALUE = 7,
+	IFCEXTERNALREFERENCE = 5,
+	IFCMATERIALDEFINITION = 8,
+	IFCORGANIZATION = 2,
+	IFCPERSON = 0,
+	IFCPERSONANDORGANIZATION = 1,
+	IFCTABLE = 3,
+	IFCTIMESERIES = 4
 }
 
-@GenModel(documentation="Select class of IfcCurveStyleFontSelect")
-@XpressModel(name="IfcCurveStyleFontSelect",kind="generated")
-class IfcCurveStyleFontSelect {
+@GenModel(documentation="Select class of IfcObjectReferenceSelect")
+@XpressModel(name="IfcObjectReferenceSelect",kind="generated")
+class IfcObjectReferenceSelect {
 	
-	EnumIfcCurveStyleFontSelect ifcCurveStyleFontSelect
+	EnumIfcObjectReferenceSelect ifcObjectReferenceSelect
 	
 	// Principal select value
 	
-	refers IfcCurveStyleFont ifcCurveStyleFont
-	refers IfcPreDefinedCurveFont ifcPreDefinedCurveFont
+	refers IfcAddress ifcAddress
+	refers IfcAppliedValue ifcAppliedValue
+	refers IfcExternalReference ifcExternalReference
+	refers IfcMaterialDefinition ifcMaterialDefinition
+	refers IfcOrganization ifcOrganization
+	refers IfcPerson ifcPerson
+	refers IfcPersonAndOrganization ifcPersonAndOrganization
+	refers IfcTable ifcTable
+	refers IfcTimeSeries ifcTimeSeries
 	
 	// Operations
 	
-	op void setValue(EnumIfcCurveStyleFontSelect s, Object v) {
+	op void setValue(EnumIfcObjectReferenceSelect s, Object v) {
 		
 		switch(s) {
-			case IFCCURVESTYLEFONT:
-				ifcCurveStyleFont = v as IfcCurveStyleFont
-			case IFCPREDEFINEDCURVEFONT:
-				ifcPreDefinedCurveFont = v as IfcPreDefinedCurveFont
+			case IFCADDRESS:
+				ifcAddress = v as IfcAddress
+			case IFCAPPLIEDVALUE:
+				ifcAppliedValue = v as IfcAppliedValue
+			case IFCEXTERNALREFERENCE:
+				ifcExternalReference = v as IfcExternalReference
+			case IFCMATERIALDEFINITION:
+				ifcMaterialDefinition = v as IfcMaterialDefinition
+			case IFCORGANIZATION:
+				ifcOrganization = v as IfcOrganization
+			case IFCPERSON:
+				ifcPerson = v as IfcPerson
+			case IFCPERSONANDORGANIZATION:
+				ifcPersonAndOrganization = v as IfcPersonAndOrganization
+			case IFCTABLE:
+				ifcTable = v as IfcTable
+			case IFCTIMESERIES:
+				ifcTimeSeries = v as IfcTimeSeries
 			default:
 				throw new IllegalArgumentException
 		}
 	}
 	
 	op Object getValue() {
-		switch(ifcCurveStyleFontSelect) {
-			case IFCCURVESTYLEFONT:
-				ifcCurveStyleFont
-			case IFCPREDEFINEDCURVEFONT:
-				ifcPreDefinedCurveFont
+		switch(ifcObjectReferenceSelect) {
+			case IFCADDRESS:
+				ifcAddress
+			case IFCAPPLIEDVALUE:
+				ifcAppliedValue
+			case IFCEXTERNALREFERENCE:
+				ifcExternalReference
+			case IFCMATERIALDEFINITION:
+				ifcMaterialDefinition
+			case IFCORGANIZATION:
+				ifcOrganization
+			case IFCPERSON:
+				ifcPerson
+			case IFCPERSONANDORGANIZATION:
+				ifcPersonAndOrganization
+			case IFCTABLE:
+				ifcTable
+			case IFCTIMESERIES:
+				ifcTimeSeries
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCBOOLEAN} as {@link Boolean}</li>
+		<li>{@link IFCMODULUSOFSUBGRADEREACTIONMEASURE} as {@link Double}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcModulusOfSubgradeReactionSelect {
+	IFCBOOLEAN = 0,
+	IFCMODULUSOFSUBGRADEREACTIONMEASURE = 1
+}
+
+@GenModel(documentation="Select class of IfcModulusOfSubgradeReactionSelect")
+@XpressModel(name="IfcModulusOfSubgradeReactionSelect",kind="generated")
+class IfcModulusOfSubgradeReactionSelect {
+	
+	EnumIfcModulusOfSubgradeReactionSelect ifcModulusOfSubgradeReactionSelect
+	
+	// Principal select value
+	
+	boolean booleanValue
+	double doubleValue
+	
+	// Operations
+	
+	op void setValue(EnumIfcModulusOfSubgradeReactionSelect s, Object v) {
+		
+		switch(s) {
+			case IFCBOOLEAN:
+				booleanValue = v as Boolean
+			case IFCMODULUSOFSUBGRADEREACTIONMEASURE:
+				doubleValue = v as Double
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcModulusOfSubgradeReactionSelect) {
+			case IFCBOOLEAN:
+				booleanValue
+			case IFCMODULUSOFSUBGRADEREACTIONMEASURE:
+				doubleValue
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCEXTERNALLYDEFINEDTEXTFONT} as {@link IfcExternallyDefinedTextFont}</li>
+		<li>{@link IFCPREDEFINEDTEXTFONT} as {@link IfcPreDefinedTextFont}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcTextFontSelect {
+	IFCEXTERNALLYDEFINEDTEXTFONT = 1,
+	IFCPREDEFINEDTEXTFONT = 0
+}
+
+@GenModel(documentation="Select class of IfcTextFontSelect")
+@XpressModel(name="IfcTextFontSelect",kind="generated")
+class IfcTextFontSelect {
+	
+	EnumIfcTextFontSelect ifcTextFontSelect
+	
+	// Principal select value
+	
+	refers IfcExternallyDefinedTextFont ifcExternallyDefinedTextFont
+	refers IfcPreDefinedTextFont ifcPreDefinedTextFont
+	
+	// Operations
+	
+	op void setValue(EnumIfcTextFontSelect s, Object v) {
+		
+		switch(s) {
+			case IFCEXTERNALLYDEFINEDTEXTFONT:
+				ifcExternallyDefinedTextFont = v as IfcExternallyDefinedTextFont
+			case IFCPREDEFINEDTEXTFONT:
+				ifcPreDefinedTextFont = v as IfcPreDefinedTextFont
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcTextFontSelect) {
+			case IFCEXTERNALLYDEFINEDTEXTFONT:
+				ifcExternallyDefinedTextFont
+			case IFCPREDEFINEDTEXTFONT:
+				ifcPreDefinedTextFont
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCEXTERNALREFERENCE} as {@link IfcExternalReference}</li>
+		<li>{@link IFCLIGHTINTENSITYDISTRIBUTION} as {@link IfcLightIntensityDistribution}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcLightDistributionDataSourceSelect {
+	IFCEXTERNALREFERENCE = 0,
+	IFCLIGHTINTENSITYDISTRIBUTION = 1
+}
+
+@GenModel(documentation="Select class of IfcLightDistributionDataSourceSelect")
+@XpressModel(name="IfcLightDistributionDataSourceSelect",kind="generated")
+class IfcLightDistributionDataSourceSelect {
+	
+	EnumIfcLightDistributionDataSourceSelect ifcLightDistributionDataSourceSelect
+	
+	// Principal select value
+	
+	refers IfcExternalReference ifcExternalReference
+	refers IfcLightIntensityDistribution ifcLightIntensityDistribution
+	
+	// Operations
+	
+	op void setValue(EnumIfcLightDistributionDataSourceSelect s, Object v) {
+		
+		switch(s) {
+			case IFCEXTERNALREFERENCE:
+				ifcExternalReference = v as IfcExternalReference
+			case IFCLIGHTINTENSITYDISTRIBUTION:
+				ifcLightIntensityDistribution = v as IfcLightIntensityDistribution
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcLightDistributionDataSourceSelect) {
+			case IFCEXTERNALREFERENCE:
+				ifcExternalReference
+			case IFCLIGHTINTENSITYDISTRIBUTION:
+				ifcLightIntensityDistribution
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCBOOLEANRESULT} as {@link IfcBooleanResult}</li>
+		<li>{@link IFCCSGPRIMITIVE3D} as {@link IfcCsgPrimitive3D}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcCsgSelect {
+	IFCBOOLEANRESULT = 0,
+	IFCCSGPRIMITIVE3D = 1
+}
+
+@GenModel(documentation="Select class of IfcCsgSelect")
+@XpressModel(name="IfcCsgSelect",kind="generated")
+class IfcCsgSelect {
+	
+	EnumIfcCsgSelect ifcCsgSelect
+	
+	// Principal select value
+	
+	refers IfcBooleanResult ifcBooleanResult
+	refers IfcCsgPrimitive3D ifcCsgPrimitive3D
+	
+	// Operations
+	
+	op void setValue(EnumIfcCsgSelect s, Object v) {
+		
+		switch(s) {
+			case IFCBOOLEANRESULT:
+				ifcBooleanResult = v as IfcBooleanResult
+			case IFCCSGPRIMITIVE3D:
+				ifcCsgPrimitive3D = v as IfcCsgPrimitive3D
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcCsgSelect) {
+			case IFCBOOLEANRESULT:
+				ifcBooleanResult
+			case IFCCSGPRIMITIVE3D:
+				ifcCsgPrimitive3D
 			default:
 				throw new IllegalArgumentException
 		}
@@ -3755,115 +3984,115 @@ class IfcCurveStyleFontSelect {
 		<li>{@link IFCWARPINGMOMENTMEASURE} as {@link Double}</li></ul>")
 @XpressModel(kind="new")
 enum EnumIfcAppliedValueSelect {
-	IFCABSORBEDDOSEMEASURE = 17,
-	IFCACCELERATIONMEASURE = 49,
-	IFCAMOUNTOFSUBSTANCEMEASURE = 71,
-	IFCANGULARVELOCITYMEASURE = 29,
-	IFCAREADENSITYMEASURE = 0,
-	IFCAREAMEASURE = 96,
-	IFCBOOLEAN = 33,
-	IFCCOMPLEXNUMBER = 42,
-	IFCCOMPOUNDPLANEANGLEMEASURE = 90,
-	IFCCONTEXTDEPENDENTMEASURE = 92,
-	IFCCOUNTMEASURE = 24,
-	IFCCURVATUREMEASURE = 79,
-	IFCDATE = 5,
-	IFCDATETIME = 69,
-	IFCDESCRIPTIVEMEASURE = 81,
-	IFCDOSEEQUIVALENTMEASURE = 100,
-	IFCDURATION = 70,
-	IFCDYNAMICVISCOSITYMEASURE = 85,
-	IFCELECTRICCAPACITANCEMEASURE = 75,
-	IFCELECTRICCHARGEMEASURE = 34,
-	IFCELECTRICCONDUCTANCEMEASURE = 44,
-	IFCELECTRICCURRENTMEASURE = 3,
-	IFCELECTRICRESISTANCEMEASURE = 55,
-	IFCELECTRICVOLTAGEMEASURE = 22,
-	IFCENERGYMEASURE = 97,
-	IFCFORCEMEASURE = 51,
-	IFCFREQUENCYMEASURE = 50,
-	IFCHEATFLUXDENSITYMEASURE = 72,
-	IFCHEATINGVALUEMEASURE = 35,
-	IFCIDENTIFIER = 105,
-	IFCILLUMINANCEMEASURE = 31,
-	IFCINDUCTANCEMEASURE = 10,
-	IFCINTEGER = 15,
-	IFCINTEGERCOUNTRATEMEASURE = 76,
-	IFCIONCONCENTRATIONMEASURE = 9,
-	IFCISOTHERMALMOISTURECAPACITYMEASURE = 16,
-	IFCKINEMATICVISCOSITYMEASURE = 57,
-	IFCLABEL = 89,
-	IFCLENGTHMEASURE = 25,
-	IFCLINEARFORCEMEASURE = 73,
-	IFCLINEARMOMENTMEASURE = 12,
-	IFCLINEARSTIFFNESSMEASURE = 4,
-	IFCLINEARVELOCITYMEASURE = 88,
-	IFCLOGICAL = 40,
-	IFCLUMINOUSFLUXMEASURE = 45,
-	IFCLUMINOUSINTENSITYDISTRIBUTIONMEASURE = 104,
-	IFCLUMINOUSINTENSITYMEASURE = 2,
-	IFCMAGNETICFLUXDENSITYMEASURE = 41,
-	IFCMAGNETICFLUXMEASURE = 68,
-	IFCMASSDENSITYMEASURE = 107,
-	IFCMASSFLOWRATEMEASURE = 67,
-	IFCMASSMEASURE = 47,
-	IFCMASSPERLENGTHMEASURE = 77,
-	IFCMEASUREWITHUNIT = 53,
-	IFCMODULUSOFELASTICITYMEASURE = 30,
-	IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE = 98,
-	IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE = 63,
-	IFCMODULUSOFSUBGRADEREACTIONMEASURE = 46,
-	IFCMOISTUREDIFFUSIVITYMEASURE = 64,
-	IFCMOLECULARWEIGHTMEASURE = 20,
-	IFCMOMENTOFINERTIAMEASURE = 101,
-	IFCMONETARYMEASURE = 61,
-	IFCNONNEGATIVELENGTHMEASURE = 48,
-	IFCNORMALISEDRATIOMEASURE = 103,
-	IFCNUMERICMEASURE = 39,
-	IFCPHMEASURE = 36,
-	IFCPARAMETERVALUE = 6,
-	IFCPLANARFORCEMEASURE = 14,
-	IFCPLANEANGLEMEASURE = 83,
-	IFCPOSITIVEINTEGER = 59,
-	IFCPOSITIVELENGTHMEASURE = 19,
-	IFCPOSITIVEPLANEANGLEMEASURE = 32,
-	IFCPOSITIVERATIOMEASURE = 54,
-	IFCPOWERMEASURE = 74,
-	IFCPRESSUREMEASURE = 37,
-	IFCRADIOACTIVITYMEASURE = 27,
-	IFCRATIOMEASURE = 11,
-	IFCREAL = 62,
-	IFCREFERENCE = 66,
-	IFCROTATIONALFREQUENCYMEASURE = 1,
-	IFCROTATIONALMASSMEASURE = 99,
-	IFCROTATIONALSTIFFNESSMEASURE = 80,
-	IFCSECTIONMODULUSMEASURE = 102,
-	IFCSECTIONALAREAINTEGRALMEASURE = 13,
-	IFCSHEARMODULUSMEASURE = 82,
-	IFCSOLIDANGLEMEASURE = 60,
-	IFCSOUNDPOWERLEVELMEASURE = 52,
-	IFCSOUNDPOWERMEASURE = 108,
-	IFCSOUNDPRESSURELEVELMEASURE = 86,
-	IFCSOUNDPRESSUREMEASURE = 78,
-	IFCSPECIFICHEATCAPACITYMEASURE = 38,
-	IFCTEMPERATUREGRADIENTMEASURE = 18,
-	IFCTEMPERATURERATEOFCHANGEMEASURE = 58,
-	IFCTEXT = 8,
-	IFCTHERMALADMITTANCEMEASURE = 94,
-	IFCTHERMALCONDUCTIVITYMEASURE = 95,
-	IFCTHERMALEXPANSIONCOEFFICIENTMEASURE = 106,
-	IFCTHERMALRESISTANCEMEASURE = 21,
+	IFCABSORBEDDOSEMEASURE = 90,
+	IFCACCELERATIONMEASURE = 61,
+	IFCAMOUNTOFSUBSTANCEMEASURE = 45,
+	IFCANGULARVELOCITYMEASURE = 35,
+	IFCAREADENSITYMEASURE = 41,
+	IFCAREAMEASURE = 73,
+	IFCBOOLEAN = 39,
+	IFCCOMPLEXNUMBER = 64,
+	IFCCOMPOUNDPLANEANGLEMEASURE = 52,
+	IFCCONTEXTDEPENDENTMEASURE = 32,
+	IFCCOUNTMEASURE = 5,
+	IFCCURVATUREMEASURE = 78,
+	IFCDATE = 9,
+	IFCDATETIME = 42,
+	IFCDESCRIPTIVEMEASURE = 85,
+	IFCDOSEEQUIVALENTMEASURE = 26,
+	IFCDURATION = 56,
+	IFCDYNAMICVISCOSITYMEASURE = 37,
+	IFCELECTRICCAPACITANCEMEASURE = 108,
+	IFCELECTRICCHARGEMEASURE = 60,
+	IFCELECTRICCONDUCTANCEMEASURE = 96,
+	IFCELECTRICCURRENTMEASURE = 80,
+	IFCELECTRICRESISTANCEMEASURE = 0,
+	IFCELECTRICVOLTAGEMEASURE = 105,
+	IFCENERGYMEASURE = 14,
+	IFCFORCEMEASURE = 49,
+	IFCFREQUENCYMEASURE = 36,
+	IFCHEATFLUXDENSITYMEASURE = 98,
+	IFCHEATINGVALUEMEASURE = 17,
+	IFCIDENTIFIER = 24,
+	IFCILLUMINANCEMEASURE = 27,
+	IFCINDUCTANCEMEASURE = 59,
+	IFCINTEGER = 34,
+	IFCINTEGERCOUNTRATEMEASURE = 99,
+	IFCIONCONCENTRATIONMEASURE = 92,
+	IFCISOTHERMALMOISTURECAPACITYMEASURE = 76,
+	IFCKINEMATICVISCOSITYMEASURE = 8,
+	IFCLABEL = 102,
+	IFCLENGTHMEASURE = 44,
+	IFCLINEARFORCEMEASURE = 38,
+	IFCLINEARMOMENTMEASURE = 31,
+	IFCLINEARSTIFFNESSMEASURE = 57,
+	IFCLINEARVELOCITYMEASURE = 23,
+	IFCLOGICAL = 20,
+	IFCLUMINOUSFLUXMEASURE = 18,
+	IFCLUMINOUSINTENSITYDISTRIBUTIONMEASURE = 103,
+	IFCLUMINOUSINTENSITYMEASURE = 43,
+	IFCMAGNETICFLUXDENSITYMEASURE = 68,
+	IFCMAGNETICFLUXMEASURE = 82,
+	IFCMASSDENSITYMEASURE = 100,
+	IFCMASSFLOWRATEMEASURE = 91,
+	IFCMASSMEASURE = 55,
+	IFCMASSPERLENGTHMEASURE = 6,
+	IFCMEASUREWITHUNIT = 50,
+	IFCMODULUSOFELASTICITYMEASURE = 94,
+	IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE = 101,
+	IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE = 16,
+	IFCMODULUSOFSUBGRADEREACTIONMEASURE = 1,
+	IFCMOISTUREDIFFUSIVITYMEASURE = 74,
+	IFCMOLECULARWEIGHTMEASURE = 75,
+	IFCMOMENTOFINERTIAMEASURE = 12,
+	IFCMONETARYMEASURE = 11,
+	IFCNONNEGATIVELENGTHMEASURE = 29,
+	IFCNORMALISEDRATIOMEASURE = 25,
+	IFCNUMERICMEASURE = 13,
+	IFCPHMEASURE = 81,
+	IFCPARAMETERVALUE = 69,
+	IFCPLANARFORCEMEASURE = 28,
+	IFCPLANEANGLEMEASURE = 22,
+	IFCPOSITIVEINTEGER = 33,
+	IFCPOSITIVELENGTHMEASURE = 79,
+	IFCPOSITIVEPLANEANGLEMEASURE = 72,
+	IFCPOSITIVERATIOMEASURE = 47,
+	IFCPOWERMEASURE = 46,
+	IFCPRESSUREMEASURE = 53,
+	IFCRADIOACTIVITYMEASURE = 83,
+	IFCRATIOMEASURE = 97,
+	IFCREAL = 95,
+	IFCREFERENCE = 87,
+	IFCROTATIONALFREQUENCYMEASURE = 54,
+	IFCROTATIONALMASSMEASURE = 86,
+	IFCROTATIONALSTIFFNESSMEASURE = 51,
+	IFCSECTIONMODULUSMEASURE = 30,
+	IFCSECTIONALAREAINTEGRALMEASURE = 48,
+	IFCSHEARMODULUSMEASURE = 70,
+	IFCSOLIDANGLEMEASURE = 106,
+	IFCSOUNDPOWERLEVELMEASURE = 67,
+	IFCSOUNDPOWERMEASURE = 88,
+	IFCSOUNDPRESSURELEVELMEASURE = 84,
+	IFCSOUNDPRESSUREMEASURE = 4,
+	IFCSPECIFICHEATCAPACITYMEASURE = 104,
+	IFCTEMPERATUREGRADIENTMEASURE = 3,
+	IFCTEMPERATURERATEOFCHANGEMEASURE = 40,
+	IFCTEXT = 2,
+	IFCTHERMALADMITTANCEMEASURE = 21,
+	IFCTHERMALCONDUCTIVITYMEASURE = 19,
+	IFCTHERMALEXPANSIONCOEFFICIENTMEASURE = 107,
+	IFCTHERMALRESISTANCEMEASURE = 10,
 	IFCTHERMALTRANSMITTANCEMEASURE = 93,
-	IFCTHERMODYNAMICTEMPERATUREMEASURE = 43,
-	IFCTIME = 28,
-	IFCTIMEMEASURE = 87,
-	IFCTIMESTAMP = 26,
-	IFCTORQUEMEASURE = 84,
-	IFCVAPORPERMEABILITYMEASURE = 23,
-	IFCVOLUMEMEASURE = 7,
-	IFCVOLUMETRICFLOWRATEMEASURE = 65,
-	IFCWARPINGCONSTANTMEASURE = 91,
-	IFCWARPINGMOMENTMEASURE = 56
+	IFCTHERMODYNAMICTEMPERATUREMEASURE = 65,
+	IFCTIME = 77,
+	IFCTIMEMEASURE = 66,
+	IFCTIMESTAMP = 71,
+	IFCTORQUEMEASURE = 15,
+	IFCVAPORPERMEABILITYMEASURE = 58,
+	IFCVOLUMEMEASURE = 62,
+	IFCVOLUMETRICFLOWRATEMEASURE = 7,
+	IFCWARPINGCONSTANTMEASURE = 89,
+	IFCWARPINGMOMENTMEASURE = 63
 }
 
 @GenModel(documentation="Select class of IfcAppliedValueSelect")
@@ -3874,21 +4103,27 @@ class IfcAppliedValueSelect {
 	
 	// Principal select value
 	
-	double doubleValue
 	boolean booleanValue
 	contains IfcComplexNumber ifcComplexNumber
 	contains IfcCompoundPlaneAngleMeasure ifcCompoundPlaneAngleMeasure
-	String stringValue
-	int intValue
+	double doubleValue
 	Logical logicalValue
 	refers IfcMeasureWithUnit ifcMeasureWithUnit
+	int intValue
 	refers IfcReference ifcReference
+	String stringValue
 	
 	// Operations
 	
 	op void setValue(EnumIfcAppliedValueSelect s, Object v) {
 		
 		switch(s) {
+			case IFCBOOLEAN:
+				booleanValue = v as Boolean
+			case IFCCOMPLEXNUMBER:
+				ifcComplexNumber = v as IfcComplexNumber
+			case IFCCOMPOUNDPLANEANGLEMEASURE:
+				ifcCompoundPlaneAngleMeasure = v as IfcCompoundPlaneAngleMeasure
 			case IFCABSORBEDDOSEMEASURE,
 			case IFCACCELERATIONMEASURE,
 			case IFCAMOUNTOFSUBSTANCEMEASURE,
@@ -3981,12 +4216,17 @@ class IfcAppliedValueSelect {
 			case IFCWARPINGCONSTANTMEASURE,
 			case IFCWARPINGMOMENTMEASURE:
 				doubleValue = v as Double
-			case IFCBOOLEAN:
-				booleanValue = v as Boolean
-			case IFCCOMPLEXNUMBER:
-				ifcComplexNumber = v as IfcComplexNumber
-			case IFCCOMPOUNDPLANEANGLEMEASURE:
-				ifcCompoundPlaneAngleMeasure = v as IfcCompoundPlaneAngleMeasure
+			case IFCLOGICAL:
+				logicalValue = v as Logical
+			case IFCMEASUREWITHUNIT:
+				ifcMeasureWithUnit = v as IfcMeasureWithUnit
+			case IFCINTEGER,
+			case IFCINTEGERCOUNTRATEMEASURE,
+			case IFCPOSITIVEINTEGER,
+			case IFCTIMESTAMP:
+				intValue = v as Integer
+			case IFCREFERENCE:
+				ifcReference = v as IfcReference
 			case IFCDATE,
 			case IFCDATETIME,
 			case IFCDESCRIPTIVEMEASURE,
@@ -3996,17 +4236,6 @@ class IfcAppliedValueSelect {
 			case IFCTEXT,
 			case IFCTIME:
 				stringValue = v as String
-			case IFCINTEGER,
-			case IFCINTEGERCOUNTRATEMEASURE,
-			case IFCPOSITIVEINTEGER,
-			case IFCTIMESTAMP:
-				intValue = v as Integer
-			case IFCLOGICAL:
-				logicalValue = v as Logical
-			case IFCMEASUREWITHUNIT:
-				ifcMeasureWithUnit = v as IfcMeasureWithUnit
-			case IFCREFERENCE:
-				ifcReference = v as IfcReference
 			default:
 				throw new IllegalArgumentException
 		}
@@ -4014,6 +4243,12 @@ class IfcAppliedValueSelect {
 	
 	op Object getValue() {
 		switch(ifcAppliedValueSelect) {
+			case IFCBOOLEAN:
+				booleanValue
+			case IFCCOMPLEXNUMBER:
+				ifcComplexNumber
+			case IFCCOMPOUNDPLANEANGLEMEASURE:
+				ifcCompoundPlaneAngleMeasure
 			case IFCABSORBEDDOSEMEASURE,
 			case IFCACCELERATIONMEASURE,
 			case IFCAMOUNTOFSUBSTANCEMEASURE,
@@ -4106,12 +4341,17 @@ class IfcAppliedValueSelect {
 			case IFCWARPINGCONSTANTMEASURE,
 			case IFCWARPINGMOMENTMEASURE:
 				doubleValue
-			case IFCBOOLEAN:
-				booleanValue
-			case IFCCOMPLEXNUMBER:
-				ifcComplexNumber
-			case IFCCOMPOUNDPLANEANGLEMEASURE:
-				ifcCompoundPlaneAngleMeasure
+			case IFCLOGICAL:
+				logicalValue
+			case IFCMEASUREWITHUNIT:
+				ifcMeasureWithUnit
+			case IFCINTEGER,
+			case IFCINTEGERCOUNTRATEMEASURE,
+			case IFCPOSITIVEINTEGER,
+			case IFCTIMESTAMP:
+				intValue
+			case IFCREFERENCE:
+				ifcReference
 			case IFCDATE,
 			case IFCDATETIME,
 			case IFCDESCRIPTIVEMEASURE,
@@ -4121,17 +4361,737 @@ class IfcAppliedValueSelect {
 			case IFCTEXT,
 			case IFCTIME:
 				stringValue
-			case IFCINTEGER,
-			case IFCINTEGERCOUNTRATEMEASURE,
-			case IFCPOSITIVEINTEGER,
-			case IFCTIMESTAMP:
-				intValue
-			case IFCLOGICAL:
-				logicalValue
-			case IFCMEASUREWITHUNIT:
-				ifcMeasureWithUnit
-			case IFCREFERENCE:
-				ifcReference
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCAXIS2PLACEMENT2D} as {@link IfcAxis2Placement2D}</li>
+		<li>{@link IFCAXIS2PLACEMENT3D} as {@link IfcAxis2Placement3D}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcAxis2Placement {
+	IFCAXIS2PLACEMENT2D = 0,
+	IFCAXIS2PLACEMENT3D = 1
+}
+
+@GenModel(documentation="Select class of IfcAxis2Placement")
+@XpressModel(name="IfcAxis2Placement",kind="generated")
+class IfcAxis2Placement {
+	
+	EnumIfcAxis2Placement ifcAxis2Placement
+	
+	// Principal select value
+	
+	refers IfcAxis2Placement2D ifcAxis2Placement2D
+	refers IfcAxis2Placement3D ifcAxis2Placement3D
+	
+	// Operations
+	
+	op void setValue(EnumIfcAxis2Placement s, Object v) {
+		
+		switch(s) {
+			case IFCAXIS2PLACEMENT2D:
+				ifcAxis2Placement2D = v as IfcAxis2Placement2D
+			case IFCAXIS2PLACEMENT3D:
+				ifcAxis2Placement3D = v as IfcAxis2Placement3D
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcAxis2Placement) {
+			case IFCAXIS2PLACEMENT2D:
+				ifcAxis2Placement2D
+			case IFCAXIS2PLACEMENT3D:
+				ifcAxis2Placement3D
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCBOOLEANRESULT} as {@link IfcBooleanResult}</li>
+		<li>{@link IFCCSGPRIMITIVE3D} as {@link IfcCsgPrimitive3D}</li>
+		<li>{@link IFCHALFSPACESOLID} as {@link IfcHalfSpaceSolid}</li>
+		<li>{@link IFCSOLIDMODEL} as {@link IfcSolidModel}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcBooleanOperand {
+	IFCBOOLEANRESULT = 0,
+	IFCCSGPRIMITIVE3D = 1,
+	IFCHALFSPACESOLID = 3,
+	IFCSOLIDMODEL = 2
+}
+
+@GenModel(documentation="Select class of IfcBooleanOperand")
+@XpressModel(name="IfcBooleanOperand",kind="generated")
+class IfcBooleanOperand {
+	
+	EnumIfcBooleanOperand ifcBooleanOperand
+	
+	// Principal select value
+	
+	refers IfcBooleanResult ifcBooleanResult
+	refers IfcCsgPrimitive3D ifcCsgPrimitive3D
+	refers IfcHalfSpaceSolid ifcHalfSpaceSolid
+	refers IfcSolidModel ifcSolidModel
+	
+	// Operations
+	
+	op void setValue(EnumIfcBooleanOperand s, Object v) {
+		
+		switch(s) {
+			case IFCBOOLEANRESULT:
+				ifcBooleanResult = v as IfcBooleanResult
+			case IFCCSGPRIMITIVE3D:
+				ifcCsgPrimitive3D = v as IfcCsgPrimitive3D
+			case IFCHALFSPACESOLID:
+				ifcHalfSpaceSolid = v as IfcHalfSpaceSolid
+			case IFCSOLIDMODEL:
+				ifcSolidModel = v as IfcSolidModel
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcBooleanOperand) {
+			case IFCBOOLEANRESULT:
+				ifcBooleanResult
+			case IFCCSGPRIMITIVE3D:
+				ifcCsgPrimitive3D
+			case IFCHALFSPACESOLID:
+				ifcHalfSpaceSolid
+			case IFCSOLIDMODEL:
+				ifcSolidModel
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCORGANIZATION} as {@link IfcOrganization}</li>
+		<li>{@link IFCPERSON} as {@link IfcPerson}</li>
+		<li>{@link IFCPERSONANDORGANIZATION} as {@link IfcPersonAndOrganization}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcActorSelect {
+	IFCORGANIZATION = 2,
+	IFCPERSON = 0,
+	IFCPERSONANDORGANIZATION = 1
+}
+
+@GenModel(documentation="Select class of IfcActorSelect")
+@XpressModel(name="IfcActorSelect",kind="generated")
+class IfcActorSelect {
+	
+	EnumIfcActorSelect ifcActorSelect
+	
+	// Principal select value
+	
+	refers IfcOrganization ifcOrganization
+	refers IfcPerson ifcPerson
+	refers IfcPersonAndOrganization ifcPersonAndOrganization
+	
+	// Operations
+	
+	op void setValue(EnumIfcActorSelect s, Object v) {
+		
+		switch(s) {
+			case IFCORGANIZATION:
+				ifcOrganization = v as IfcOrganization
+			case IFCPERSON:
+				ifcPerson = v as IfcPerson
+			case IFCPERSONANDORGANIZATION:
+				ifcPersonAndOrganization = v as IfcPersonAndOrganization
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcActorSelect) {
+			case IFCORGANIZATION:
+				ifcOrganization
+			case IFCPERSON:
+				ifcPerson
+			case IFCPERSONANDORGANIZATION:
+				ifcPersonAndOrganization
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCBOOLEAN} as {@link Boolean}</li>
+		<li>{@link IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE} as {@link Double}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcModulusOfTranslationalSubgradeReactionSelect {
+	IFCBOOLEAN = 0,
+	IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE = 1
+}
+
+@GenModel(documentation="Select class of IfcModulusOfTranslationalSubgradeReactionSelect")
+@XpressModel(name="IfcModulusOfTranslationalSubgradeReactionSelect",kind="generated")
+class IfcModulusOfTranslationalSubgradeReactionSelect {
+	
+	EnumIfcModulusOfTranslationalSubgradeReactionSelect ifcModulusOfTranslationalSubgradeReactionSelect
+	
+	// Principal select value
+	
+	boolean booleanValue
+	double doubleValue
+	
+	// Operations
+	
+	op void setValue(EnumIfcModulusOfTranslationalSubgradeReactionSelect s, Object v) {
+		
+		switch(s) {
+			case IFCBOOLEAN:
+				booleanValue = v as Boolean
+			case IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE:
+				doubleValue = v as Double
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcModulusOfTranslationalSubgradeReactionSelect) {
+			case IFCBOOLEAN:
+				booleanValue
+			case IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE:
+				doubleValue
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCBOOLEAN} as {@link Boolean}</li>
+		<li>{@link IFCWARPINGMOMENTMEASURE} as {@link Double}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcWarpingStiffnessSelect {
+	IFCBOOLEAN = 0,
+	IFCWARPINGMOMENTMEASURE = 1
+}
+
+@GenModel(documentation="Select class of IfcWarpingStiffnessSelect")
+@XpressModel(name="IfcWarpingStiffnessSelect",kind="generated")
+class IfcWarpingStiffnessSelect {
+	
+	EnumIfcWarpingStiffnessSelect ifcWarpingStiffnessSelect
+	
+	// Principal select value
+	
+	boolean booleanValue
+	double doubleValue
+	
+	// Operations
+	
+	op void setValue(EnumIfcWarpingStiffnessSelect s, Object v) {
+		
+		switch(s) {
+			case IFCBOOLEAN:
+				booleanValue = v as Boolean
+			case IFCWARPINGMOMENTMEASURE:
+				doubleValue = v as Double
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcWarpingStiffnessSelect) {
+			case IFCBOOLEAN:
+				booleanValue
+			case IFCWARPINGMOMENTMEASURE:
+				doubleValue
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCCLASSIFICATION} as {@link IfcClassification}</li>
+		<li>{@link IFCCLASSIFICATIONREFERENCE} as {@link IfcClassificationReference}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcClassificationSelect {
+	IFCCLASSIFICATION = 0,
+	IFCCLASSIFICATIONREFERENCE = 1
+}
+
+@GenModel(documentation="Select class of IfcClassificationSelect")
+@XpressModel(name="IfcClassificationSelect",kind="generated")
+class IfcClassificationSelect {
+	
+	EnumIfcClassificationSelect ifcClassificationSelect
+	
+	// Principal select value
+	
+	refers IfcClassification ifcClassification
+	refers IfcClassificationReference ifcClassificationReference
+	
+	// Operations
+	
+	op void setValue(EnumIfcClassificationSelect s, Object v) {
+		
+		switch(s) {
+			case IFCCLASSIFICATION:
+				ifcClassification = v as IfcClassification
+			case IFCCLASSIFICATIONREFERENCE:
+				ifcClassificationReference = v as IfcClassificationReference
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcClassificationSelect) {
+			case IFCCLASSIFICATION:
+				ifcClassification
+			case IFCCLASSIFICATIONREFERENCE:
+				ifcClassificationReference
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCBOOLEAN} as {@link Boolean}</li>
+		<li>{@link IFCLINEARSTIFFNESSMEASURE} as {@link Double}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcTranslationalStiffnessSelect {
+	IFCBOOLEAN = 0,
+	IFCLINEARSTIFFNESSMEASURE = 1
+}
+
+@GenModel(documentation="Select class of IfcTranslationalStiffnessSelect")
+@XpressModel(name="IfcTranslationalStiffnessSelect",kind="generated")
+class IfcTranslationalStiffnessSelect {
+	
+	EnumIfcTranslationalStiffnessSelect ifcTranslationalStiffnessSelect
+	
+	// Principal select value
+	
+	boolean booleanValue
+	double doubleValue
+	
+	// Operations
+	
+	op void setValue(EnumIfcTranslationalStiffnessSelect s, Object v) {
+		
+		switch(s) {
+			case IFCBOOLEAN:
+				booleanValue = v as Boolean
+			case IFCLINEARSTIFFNESSMEASURE:
+				doubleValue = v as Double
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcTranslationalStiffnessSelect) {
+			case IFCBOOLEAN:
+				booleanValue
+			case IFCLINEARSTIFFNESSMEASURE:
+				doubleValue
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCCOLOURSPECIFICATION} as {@link IfcColourSpecification}</li>
+		<li>{@link IFCEXTERNALLYDEFINEDHATCHSTYLE} as {@link IfcExternallyDefinedHatchStyle}</li>
+		<li>{@link IFCFILLAREASTYLEHATCHING} as {@link IfcFillAreaStyleHatching}</li>
+		<li>{@link IFCFILLAREASTYLETILES} as {@link IfcFillAreaStyleTiles}</li>
+		<li>{@link IFCPREDEFINEDCOLOUR} as {@link IfcPreDefinedColour}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcFillStyleSelect {
+	IFCCOLOURSPECIFICATION = 3,
+	IFCEXTERNALLYDEFINEDHATCHSTYLE = 2,
+	IFCFILLAREASTYLEHATCHING = 0,
+	IFCFILLAREASTYLETILES = 4,
+	IFCPREDEFINEDCOLOUR = 1
+}
+
+@GenModel(documentation="Select class of IfcFillStyleSelect")
+@XpressModel(name="IfcFillStyleSelect",kind="generated")
+class IfcFillStyleSelect {
+	
+	EnumIfcFillStyleSelect ifcFillStyleSelect
+	
+	// Principal select value
+	
+	refers IfcColourSpecification ifcColourSpecification
+	refers IfcExternallyDefinedHatchStyle ifcExternallyDefinedHatchStyle
+	refers IfcFillAreaStyleHatching ifcFillAreaStyleHatching
+	refers IfcFillAreaStyleTiles ifcFillAreaStyleTiles
+	refers IfcPreDefinedColour ifcPreDefinedColour
+	
+	// Operations
+	
+	op void setValue(EnumIfcFillStyleSelect s, Object v) {
+		
+		switch(s) {
+			case IFCCOLOURSPECIFICATION:
+				ifcColourSpecification = v as IfcColourSpecification
+			case IFCEXTERNALLYDEFINEDHATCHSTYLE:
+				ifcExternallyDefinedHatchStyle = v as IfcExternallyDefinedHatchStyle
+			case IFCFILLAREASTYLEHATCHING:
+				ifcFillAreaStyleHatching = v as IfcFillAreaStyleHatching
+			case IFCFILLAREASTYLETILES:
+				ifcFillAreaStyleTiles = v as IfcFillAreaStyleTiles
+			case IFCPREDEFINEDCOLOUR:
+				ifcPreDefinedColour = v as IfcPreDefinedColour
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcFillStyleSelect) {
+			case IFCCOLOURSPECIFICATION:
+				ifcColourSpecification
+			case IFCEXTERNALLYDEFINEDHATCHSTYLE:
+				ifcExternallyDefinedHatchStyle
+			case IFCFILLAREASTYLEHATCHING:
+				ifcFillAreaStyleHatching
+			case IFCFILLAREASTYLETILES:
+				ifcFillAreaStyleTiles
+			case IFCPREDEFINEDCOLOUR:
+				ifcPreDefinedColour
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCDERIVEDUNIT} as {@link IfcDerivedUnit}</li>
+		<li>{@link IFCMONETARYUNIT} as {@link IfcMonetaryUnit}</li>
+		<li>{@link IFCNAMEDUNIT} as {@link IfcNamedUnit}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcUnit {
+	IFCDERIVEDUNIT = 2,
+	IFCMONETARYUNIT = 1,
+	IFCNAMEDUNIT = 0
+}
+
+@GenModel(documentation="Select class of IfcUnit")
+@XpressModel(name="IfcUnit",kind="generated")
+class IfcUnit {
+	
+	EnumIfcUnit ifcUnit
+	
+	// Principal select value
+	
+	refers IfcDerivedUnit ifcDerivedUnit
+	refers IfcMonetaryUnit ifcMonetaryUnit
+	refers IfcNamedUnit ifcNamedUnit
+	
+	// Operations
+	
+	op void setValue(EnumIfcUnit s, Object v) {
+		
+		switch(s) {
+			case IFCDERIVEDUNIT:
+				ifcDerivedUnit = v as IfcDerivedUnit
+			case IFCMONETARYUNIT:
+				ifcMonetaryUnit = v as IfcMonetaryUnit
+			case IFCNAMEDUNIT:
+				ifcNamedUnit = v as IfcNamedUnit
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcUnit) {
+			case IFCDERIVEDUNIT:
+				ifcDerivedUnit
+			case IFCMONETARYUNIT:
+				ifcMonetaryUnit
+			case IFCNAMEDUNIT:
+				ifcNamedUnit
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCBOOLEAN} as {@link Boolean}</li>
+		<li>{@link IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE} as {@link Double}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcModulusOfRotationalSubgradeReactionSelect {
+	IFCBOOLEAN = 0,
+	IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE = 1
+}
+
+@GenModel(documentation="Select class of IfcModulusOfRotationalSubgradeReactionSelect")
+@XpressModel(name="IfcModulusOfRotationalSubgradeReactionSelect",kind="generated")
+class IfcModulusOfRotationalSubgradeReactionSelect {
+	
+	EnumIfcModulusOfRotationalSubgradeReactionSelect ifcModulusOfRotationalSubgradeReactionSelect
+	
+	// Principal select value
+	
+	boolean booleanValue
+	double doubleValue
+	
+	// Operations
+	
+	op void setValue(EnumIfcModulusOfRotationalSubgradeReactionSelect s, Object v) {
+		
+		switch(s) {
+			case IFCBOOLEAN:
+				booleanValue = v as Boolean
+			case IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE:
+				doubleValue = v as Double
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcModulusOfRotationalSubgradeReactionSelect) {
+			case IFCBOOLEAN:
+				booleanValue
+			case IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE:
+				doubleValue
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCCLOSEDSHELL} as {@link IfcClosedShell}</li>
+		<li>{@link IFCOPENSHELL} as {@link IfcOpenShell}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcShell {
+	IFCCLOSEDSHELL = 0,
+	IFCOPENSHELL = 1
+}
+
+@GenModel(documentation="Select class of IfcShell")
+@XpressModel(name="IfcShell",kind="generated")
+class IfcShell {
+	
+	EnumIfcShell ifcShell
+	
+	// Principal select value
+	
+	refers IfcClosedShell ifcClosedShell
+	refers IfcOpenShell ifcOpenShell
+	
+	// Operations
+	
+	op void setValue(EnumIfcShell s, Object v) {
+		
+		switch(s) {
+			case IFCCLOSEDSHELL:
+				ifcClosedShell = v as IfcClosedShell
+			case IFCOPENSHELL:
+				ifcOpenShell = v as IfcOpenShell
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcShell) {
+			case IFCCLOSEDSHELL:
+				ifcClosedShell
+			case IFCOPENSHELL:
+				ifcOpenShell
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCFACEBASEDSURFACEMODEL} as {@link IfcFaceBasedSurfaceModel}</li>
+		<li>{@link IFCFACESURFACE} as {@link IfcFaceSurface}</li>
+		<li>{@link IFCSURFACE} as {@link IfcSurface}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcSurfaceOrFaceSurface {
+	IFCFACEBASEDSURFACEMODEL = 0,
+	IFCFACESURFACE = 1,
+	IFCSURFACE = 2
+}
+
+@GenModel(documentation="Select class of IfcSurfaceOrFaceSurface")
+@XpressModel(name="IfcSurfaceOrFaceSurface",kind="generated")
+class IfcSurfaceOrFaceSurface {
+	
+	EnumIfcSurfaceOrFaceSurface ifcSurfaceOrFaceSurface
+	
+	// Principal select value
+	
+	refers IfcFaceBasedSurfaceModel ifcFaceBasedSurfaceModel
+	refers IfcFaceSurface ifcFaceSurface
+	refers IfcSurface ifcSurface
+	
+	// Operations
+	
+	op void setValue(EnumIfcSurfaceOrFaceSurface s, Object v) {
+		
+		switch(s) {
+			case IFCFACEBASEDSURFACEMODEL:
+				ifcFaceBasedSurfaceModel = v as IfcFaceBasedSurfaceModel
+			case IFCFACESURFACE:
+				ifcFaceSurface = v as IfcFaceSurface
+			case IFCSURFACE:
+				ifcSurface = v as IfcSurface
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcSurfaceOrFaceSurface) {
+			case IFCFACEBASEDSURFACEMODEL:
+				ifcFaceBasedSurfaceModel
+			case IFCFACESURFACE:
+				ifcFaceSurface
+			case IFCSURFACE:
+				ifcSurface
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCBOOLEAN} as {@link Boolean}</li>
+		<li>{@link IFCROTATIONALSTIFFNESSMEASURE} as {@link Double}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcRotationalStiffnessSelect {
+	IFCBOOLEAN = 0,
+	IFCROTATIONALSTIFFNESSMEASURE = 1
+}
+
+@GenModel(documentation="Select class of IfcRotationalStiffnessSelect")
+@XpressModel(name="IfcRotationalStiffnessSelect",kind="generated")
+class IfcRotationalStiffnessSelect {
+	
+	EnumIfcRotationalStiffnessSelect ifcRotationalStiffnessSelect
+	
+	// Principal select value
+	
+	boolean booleanValue
+	double doubleValue
+	
+	// Operations
+	
+	op void setValue(EnumIfcRotationalStiffnessSelect s, Object v) {
+		
+		switch(s) {
+			case IFCBOOLEAN:
+				booleanValue = v as Boolean
+			case IFCROTATIONALSTIFFNESSMEASURE:
+				doubleValue = v as Double
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcRotationalStiffnessSelect) {
+			case IFCBOOLEAN:
+				booleanValue
+			case IFCROTATIONALSTIFFNESSMEASURE:
+				doubleValue
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCCLOSEDSHELL} as {@link IfcClosedShell}</li>
+		<li>{@link IFCSOLIDMODEL} as {@link IfcSolidModel}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcSolidOrShell {
+	IFCCLOSEDSHELL = 0,
+	IFCSOLIDMODEL = 1
+}
+
+@GenModel(documentation="Select class of IfcSolidOrShell")
+@XpressModel(name="IfcSolidOrShell",kind="generated")
+class IfcSolidOrShell {
+	
+	EnumIfcSolidOrShell ifcSolidOrShell
+	
+	// Principal select value
+	
+	refers IfcClosedShell ifcClosedShell
+	refers IfcSolidModel ifcSolidModel
+	
+	// Operations
+	
+	op void setValue(EnumIfcSolidOrShell s, Object v) {
+		
+		switch(s) {
+			case IFCCLOSEDSHELL:
+				ifcClosedShell = v as IfcClosedShell
+			case IFCSOLIDMODEL:
+				ifcSolidModel = v as IfcSolidModel
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcSolidOrShell) {
+			case IFCCLOSEDSHELL:
+				ifcClosedShell
+			case IFCSOLIDMODEL:
+				ifcSolidModel
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCCARTESIANPOINT} as {@link IfcCartesianPoint}</li>
+		<li>{@link IFCPARAMETERVALUE} as {@link Double}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcTrimmingSelect {
+	IFCCARTESIANPOINT = 0,
+	IFCPARAMETERVALUE = 1
+}
+
+@GenModel(documentation="Select class of IfcTrimmingSelect")
+@XpressModel(name="IfcTrimmingSelect",kind="generated")
+class IfcTrimmingSelect {
+	
+	EnumIfcTrimmingSelect ifcTrimmingSelect
+	
+	// Principal select value
+	
+	refers IfcCartesianPoint ifcCartesianPoint
+	double doubleValue
+	
+	// Operations
+	
+	op void setValue(EnumIfcTrimmingSelect s, Object v) {
+		
+		switch(s) {
+			case IFCCARTESIANPOINT:
+				ifcCartesianPoint = v as IfcCartesianPoint
+			case IFCPARAMETERVALUE:
+				doubleValue = v as Double
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcTrimmingSelect) {
+			case IFCCARTESIANPOINT:
+				ifcCartesianPoint
+			case IFCPARAMETERVALUE:
+				doubleValue
 			default:
 				throw new IllegalArgumentException
 		}
@@ -4247,113 +5207,113 @@ class IfcAppliedValueSelect {
 		<li>{@link IFCWARPINGMOMENTMEASURE} as {@link Double}</li></ul>")
 @XpressModel(kind="new")
 enum EnumIfcValue {
-	IFCABSORBEDDOSEMEASURE = 17,
-	IFCACCELERATIONMEASURE = 49,
-	IFCAMOUNTOFSUBSTANCEMEASURE = 69,
-	IFCANGULARVELOCITYMEASURE = 29,
-	IFCAREADENSITYMEASURE = 0,
-	IFCAREAMEASURE = 94,
-	IFCBOOLEAN = 33,
-	IFCCOMPLEXNUMBER = 42,
-	IFCCOMPOUNDPLANEANGLEMEASURE = 88,
-	IFCCONTEXTDEPENDENTMEASURE = 90,
-	IFCCOUNTMEASURE = 24,
+	IFCABSORBEDDOSEMEASURE = 88,
+	IFCACCELERATIONMEASURE = 60,
+	IFCAMOUNTOFSUBSTANCEMEASURE = 45,
+	IFCANGULARVELOCITYMEASURE = 35,
+	IFCAREADENSITYMEASURE = 41,
+	IFCAREAMEASURE = 72,
+	IFCBOOLEAN = 39,
+	IFCCOMPLEXNUMBER = 63,
+	IFCCOMPOUNDPLANEANGLEMEASURE = 51,
+	IFCCONTEXTDEPENDENTMEASURE = 32,
+	IFCCOUNTMEASURE = 5,
 	IFCCURVATUREMEASURE = 77,
-	IFCDATE = 5,
-	IFCDATETIME = 67,
-	IFCDESCRIPTIVEMEASURE = 79,
-	IFCDOSEEQUIVALENTMEASURE = 98,
-	IFCDURATION = 68,
-	IFCDYNAMICVISCOSITYMEASURE = 83,
-	IFCELECTRICCAPACITANCEMEASURE = 73,
-	IFCELECTRICCHARGEMEASURE = 34,
-	IFCELECTRICCONDUCTANCEMEASURE = 44,
-	IFCELECTRICCURRENTMEASURE = 3,
-	IFCELECTRICRESISTANCEMEASURE = 54,
-	IFCELECTRICVOLTAGEMEASURE = 22,
-	IFCENERGYMEASURE = 95,
-	IFCFORCEMEASURE = 51,
-	IFCFREQUENCYMEASURE = 50,
-	IFCHEATFLUXDENSITYMEASURE = 70,
-	IFCHEATINGVALUEMEASURE = 35,
-	IFCIDENTIFIER = 103,
-	IFCILLUMINANCEMEASURE = 31,
-	IFCINDUCTANCEMEASURE = 10,
-	IFCINTEGER = 15,
-	IFCINTEGERCOUNTRATEMEASURE = 74,
-	IFCIONCONCENTRATIONMEASURE = 9,
-	IFCISOTHERMALMOISTURECAPACITYMEASURE = 16,
-	IFCKINEMATICVISCOSITYMEASURE = 56,
-	IFCLABEL = 87,
-	IFCLENGTHMEASURE = 25,
-	IFCLINEARFORCEMEASURE = 71,
-	IFCLINEARMOMENTMEASURE = 12,
-	IFCLINEARSTIFFNESSMEASURE = 4,
-	IFCLINEARVELOCITYMEASURE = 86,
-	IFCLOGICAL = 40,
-	IFCLUMINOUSFLUXMEASURE = 45,
-	IFCLUMINOUSINTENSITYDISTRIBUTIONMEASURE = 102,
-	IFCLUMINOUSINTENSITYMEASURE = 2,
-	IFCMAGNETICFLUXDENSITYMEASURE = 41,
-	IFCMAGNETICFLUXMEASURE = 66,
-	IFCMASSDENSITYMEASURE = 105,
-	IFCMASSFLOWRATEMEASURE = 65,
-	IFCMASSMEASURE = 47,
-	IFCMASSPERLENGTHMEASURE = 75,
-	IFCMODULUSOFELASTICITYMEASURE = 30,
-	IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE = 96,
-	IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE = 62,
-	IFCMODULUSOFSUBGRADEREACTIONMEASURE = 46,
-	IFCMOISTUREDIFFUSIVITYMEASURE = 63,
-	IFCMOLECULARWEIGHTMEASURE = 20,
-	IFCMOMENTOFINERTIAMEASURE = 99,
-	IFCMONETARYMEASURE = 60,
-	IFCNONNEGATIVELENGTHMEASURE = 48,
-	IFCNORMALISEDRATIOMEASURE = 101,
-	IFCNUMERICMEASURE = 39,
-	IFCPHMEASURE = 36,
-	IFCPARAMETERVALUE = 6,
-	IFCPLANARFORCEMEASURE = 14,
-	IFCPLANEANGLEMEASURE = 81,
-	IFCPOSITIVEINTEGER = 58,
-	IFCPOSITIVELENGTHMEASURE = 19,
-	IFCPOSITIVEPLANEANGLEMEASURE = 32,
-	IFCPOSITIVERATIOMEASURE = 53,
-	IFCPOWERMEASURE = 72,
-	IFCPRESSUREMEASURE = 37,
-	IFCRADIOACTIVITYMEASURE = 27,
-	IFCRATIOMEASURE = 11,
-	IFCREAL = 61,
-	IFCROTATIONALFREQUENCYMEASURE = 1,
-	IFCROTATIONALMASSMEASURE = 97,
-	IFCROTATIONALSTIFFNESSMEASURE = 78,
-	IFCSECTIONMODULUSMEASURE = 100,
-	IFCSECTIONALAREAINTEGRALMEASURE = 13,
-	IFCSHEARMODULUSMEASURE = 80,
-	IFCSOLIDANGLEMEASURE = 59,
-	IFCSOUNDPOWERLEVELMEASURE = 52,
-	IFCSOUNDPOWERMEASURE = 106,
-	IFCSOUNDPRESSURELEVELMEASURE = 84,
-	IFCSOUNDPRESSUREMEASURE = 76,
-	IFCSPECIFICHEATCAPACITYMEASURE = 38,
-	IFCTEMPERATUREGRADIENTMEASURE = 18,
-	IFCTEMPERATURERATEOFCHANGEMEASURE = 57,
-	IFCTEXT = 8,
-	IFCTHERMALADMITTANCEMEASURE = 92,
-	IFCTHERMALCONDUCTIVITYMEASURE = 93,
-	IFCTHERMALEXPANSIONCOEFFICIENTMEASURE = 104,
-	IFCTHERMALRESISTANCEMEASURE = 21,
+	IFCDATE = 9,
+	IFCDATETIME = 42,
+	IFCDESCRIPTIVEMEASURE = 84,
+	IFCDOSEEQUIVALENTMEASURE = 26,
+	IFCDURATION = 55,
+	IFCDYNAMICVISCOSITYMEASURE = 37,
+	IFCELECTRICCAPACITANCEMEASURE = 106,
+	IFCELECTRICCHARGEMEASURE = 59,
+	IFCELECTRICCONDUCTANCEMEASURE = 94,
+	IFCELECTRICCURRENTMEASURE = 79,
+	IFCELECTRICRESISTANCEMEASURE = 0,
+	IFCELECTRICVOLTAGEMEASURE = 103,
+	IFCENERGYMEASURE = 14,
+	IFCFORCEMEASURE = 49,
+	IFCFREQUENCYMEASURE = 36,
+	IFCHEATFLUXDENSITYMEASURE = 96,
+	IFCHEATINGVALUEMEASURE = 17,
+	IFCIDENTIFIER = 24,
+	IFCILLUMINANCEMEASURE = 27,
+	IFCINDUCTANCEMEASURE = 58,
+	IFCINTEGER = 34,
+	IFCINTEGERCOUNTRATEMEASURE = 97,
+	IFCIONCONCENTRATIONMEASURE = 90,
+	IFCISOTHERMALMOISTURECAPACITYMEASURE = 75,
+	IFCKINEMATICVISCOSITYMEASURE = 8,
+	IFCLABEL = 100,
+	IFCLENGTHMEASURE = 44,
+	IFCLINEARFORCEMEASURE = 38,
+	IFCLINEARMOMENTMEASURE = 31,
+	IFCLINEARSTIFFNESSMEASURE = 56,
+	IFCLINEARVELOCITYMEASURE = 23,
+	IFCLOGICAL = 20,
+	IFCLUMINOUSFLUXMEASURE = 18,
+	IFCLUMINOUSINTENSITYDISTRIBUTIONMEASURE = 101,
+	IFCLUMINOUSINTENSITYMEASURE = 43,
+	IFCMAGNETICFLUXDENSITYMEASURE = 67,
+	IFCMAGNETICFLUXMEASURE = 81,
+	IFCMASSDENSITYMEASURE = 98,
+	IFCMASSFLOWRATEMEASURE = 89,
+	IFCMASSMEASURE = 54,
+	IFCMASSPERLENGTHMEASURE = 6,
+	IFCMODULUSOFELASTICITYMEASURE = 92,
+	IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE = 99,
+	IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE = 16,
+	IFCMODULUSOFSUBGRADEREACTIONMEASURE = 1,
+	IFCMOISTUREDIFFUSIVITYMEASURE = 73,
+	IFCMOLECULARWEIGHTMEASURE = 74,
+	IFCMOMENTOFINERTIAMEASURE = 12,
+	IFCMONETARYMEASURE = 11,
+	IFCNONNEGATIVELENGTHMEASURE = 29,
+	IFCNORMALISEDRATIOMEASURE = 25,
+	IFCNUMERICMEASURE = 13,
+	IFCPHMEASURE = 80,
+	IFCPARAMETERVALUE = 68,
+	IFCPLANARFORCEMEASURE = 28,
+	IFCPLANEANGLEMEASURE = 22,
+	IFCPOSITIVEINTEGER = 33,
+	IFCPOSITIVELENGTHMEASURE = 78,
+	IFCPOSITIVEPLANEANGLEMEASURE = 71,
+	IFCPOSITIVERATIOMEASURE = 47,
+	IFCPOWERMEASURE = 46,
+	IFCPRESSUREMEASURE = 52,
+	IFCRADIOACTIVITYMEASURE = 82,
+	IFCRATIOMEASURE = 95,
+	IFCREAL = 93,
+	IFCROTATIONALFREQUENCYMEASURE = 53,
+	IFCROTATIONALMASSMEASURE = 85,
+	IFCROTATIONALSTIFFNESSMEASURE = 50,
+	IFCSECTIONMODULUSMEASURE = 30,
+	IFCSECTIONALAREAINTEGRALMEASURE = 48,
+	IFCSHEARMODULUSMEASURE = 69,
+	IFCSOLIDANGLEMEASURE = 104,
+	IFCSOUNDPOWERLEVELMEASURE = 66,
+	IFCSOUNDPOWERMEASURE = 86,
+	IFCSOUNDPRESSURELEVELMEASURE = 83,
+	IFCSOUNDPRESSUREMEASURE = 4,
+	IFCSPECIFICHEATCAPACITYMEASURE = 102,
+	IFCTEMPERATUREGRADIENTMEASURE = 3,
+	IFCTEMPERATURERATEOFCHANGEMEASURE = 40,
+	IFCTEXT = 2,
+	IFCTHERMALADMITTANCEMEASURE = 21,
+	IFCTHERMALCONDUCTIVITYMEASURE = 19,
+	IFCTHERMALEXPANSIONCOEFFICIENTMEASURE = 105,
+	IFCTHERMALRESISTANCEMEASURE = 10,
 	IFCTHERMALTRANSMITTANCEMEASURE = 91,
-	IFCTHERMODYNAMICTEMPERATUREMEASURE = 43,
-	IFCTIME = 28,
-	IFCTIMEMEASURE = 85,
-	IFCTIMESTAMP = 26,
-	IFCTORQUEMEASURE = 82,
-	IFCVAPORPERMEABILITYMEASURE = 23,
-	IFCVOLUMEMEASURE = 7,
-	IFCVOLUMETRICFLOWRATEMEASURE = 64,
-	IFCWARPINGCONSTANTMEASURE = 89,
-	IFCWARPINGMOMENTMEASURE = 55
+	IFCTHERMODYNAMICTEMPERATUREMEASURE = 64,
+	IFCTIME = 76,
+	IFCTIMEMEASURE = 65,
+	IFCTIMESTAMP = 70,
+	IFCTORQUEMEASURE = 15,
+	IFCVAPORPERMEABILITYMEASURE = 57,
+	IFCVOLUMEMEASURE = 61,
+	IFCVOLUMETRICFLOWRATEMEASURE = 7,
+	IFCWARPINGCONSTANTMEASURE = 87,
+	IFCWARPINGMOMENTMEASURE = 62
 }
 
 @GenModel(documentation="Select class of IfcValue")
@@ -4364,19 +5324,25 @@ class IfcValue {
 	
 	// Principal select value
 	
-	double doubleValue
 	boolean booleanValue
 	contains IfcComplexNumber ifcComplexNumber
 	contains IfcCompoundPlaneAngleMeasure ifcCompoundPlaneAngleMeasure
-	String stringValue
-	int intValue
+	double doubleValue
 	Logical logicalValue
+	int intValue
+	String stringValue
 	
 	// Operations
 	
 	op void setValue(EnumIfcValue s, Object v) {
 		
 		switch(s) {
+			case IFCBOOLEAN:
+				booleanValue = v as Boolean
+			case IFCCOMPLEXNUMBER:
+				ifcComplexNumber = v as IfcComplexNumber
+			case IFCCOMPOUNDPLANEANGLEMEASURE:
+				ifcCompoundPlaneAngleMeasure = v as IfcCompoundPlaneAngleMeasure
 			case IFCABSORBEDDOSEMEASURE,
 			case IFCACCELERATIONMEASURE,
 			case IFCAMOUNTOFSUBSTANCEMEASURE,
@@ -4469,12 +5435,13 @@ class IfcValue {
 			case IFCWARPINGCONSTANTMEASURE,
 			case IFCWARPINGMOMENTMEASURE:
 				doubleValue = v as Double
-			case IFCBOOLEAN:
-				booleanValue = v as Boolean
-			case IFCCOMPLEXNUMBER:
-				ifcComplexNumber = v as IfcComplexNumber
-			case IFCCOMPOUNDPLANEANGLEMEASURE:
-				ifcCompoundPlaneAngleMeasure = v as IfcCompoundPlaneAngleMeasure
+			case IFCLOGICAL:
+				logicalValue = v as Logical
+			case IFCINTEGER,
+			case IFCINTEGERCOUNTRATEMEASURE,
+			case IFCPOSITIVEINTEGER,
+			case IFCTIMESTAMP:
+				intValue = v as Integer
 			case IFCDATE,
 			case IFCDATETIME,
 			case IFCDESCRIPTIVEMEASURE,
@@ -4484,13 +5451,6 @@ class IfcValue {
 			case IFCTEXT,
 			case IFCTIME:
 				stringValue = v as String
-			case IFCINTEGER,
-			case IFCINTEGERCOUNTRATEMEASURE,
-			case IFCPOSITIVEINTEGER,
-			case IFCTIMESTAMP:
-				intValue = v as Integer
-			case IFCLOGICAL:
-				logicalValue = v as Logical
 			default:
 				throw new IllegalArgumentException
 		}
@@ -4498,6 +5458,12 @@ class IfcValue {
 	
 	op Object getValue() {
 		switch(ifcValue) {
+			case IFCBOOLEAN:
+				booleanValue
+			case IFCCOMPLEXNUMBER:
+				ifcComplexNumber
+			case IFCCOMPOUNDPLANEANGLEMEASURE:
+				ifcCompoundPlaneAngleMeasure
 			case IFCABSORBEDDOSEMEASURE,
 			case IFCACCELERATIONMEASURE,
 			case IFCAMOUNTOFSUBSTANCEMEASURE,
@@ -4590,12 +5556,13 @@ class IfcValue {
 			case IFCWARPINGCONSTANTMEASURE,
 			case IFCWARPINGMOMENTMEASURE:
 				doubleValue
-			case IFCBOOLEAN:
-				booleanValue
-			case IFCCOMPLEXNUMBER:
-				ifcComplexNumber
-			case IFCCOMPOUNDPLANEANGLEMEASURE:
-				ifcCompoundPlaneAngleMeasure
+			case IFCLOGICAL:
+				logicalValue
+			case IFCINTEGER,
+			case IFCINTEGERCOUNTRATEMEASURE,
+			case IFCPOSITIVEINTEGER,
+			case IFCTIMESTAMP:
+				intValue
 			case IFCDATE,
 			case IFCDATETIME,
 			case IFCDESCRIPTIVEMEASURE,
@@ -4605,95 +5572,130 @@ class IfcValue {
 			case IFCTEXT,
 			case IFCTIME:
 				stringValue
-			case IFCINTEGER,
-			case IFCINTEGERCOUNTRATEMEASURE,
-			case IFCPOSITIVEINTEGER,
-			case IFCTIMESTAMP:
-				intValue
-			case IFCLOGICAL:
-				logicalValue
 			default:
 				throw new IllegalArgumentException
 		}
 	}
 }
 
-@GenModel(documentation="<ul><li>{@link IFCPRESENTATIONSTYLE} as {@link IfcPresentationStyle}</li>
-		<li>{@link IFCPRESENTATIONSTYLEASSIGNMENT} as {@link IfcPresentationStyleAssignment}</li></ul>")
+@GenModel(documentation="<ul><li>{@link IFCLENGTHMEASURE} as {@link Double}</li>
+		<li>{@link IFCPLANEANGLEMEASURE} as {@link Double}</li></ul>")
 @XpressModel(kind="new")
-enum EnumIfcStyleAssignmentSelect {
-	IFCPRESENTATIONSTYLE = 1,
-	IFCPRESENTATIONSTYLEASSIGNMENT = 0
+enum EnumIfcBendingParameterSelect {
+	IFCLENGTHMEASURE = 0,
+	IFCPLANEANGLEMEASURE = 1
 }
 
-@GenModel(documentation="Select class of IfcStyleAssignmentSelect")
-@XpressModel(name="IfcStyleAssignmentSelect",kind="generated")
-class IfcStyleAssignmentSelect {
+@GenModel(documentation="Select class of IfcBendingParameterSelect")
+@XpressModel(name="IfcBendingParameterSelect",kind="generated")
+class IfcBendingParameterSelect {
 	
-	EnumIfcStyleAssignmentSelect ifcStyleAssignmentSelect
+	EnumIfcBendingParameterSelect ifcBendingParameterSelect
 	
 	// Principal select value
 	
-	refers IfcPresentationStyle ifcPresentationStyle
-	refers IfcPresentationStyleAssignment ifcPresentationStyleAssignment
+	double doubleValue
 	
 	// Operations
 	
-	op void setValue(EnumIfcStyleAssignmentSelect s, Object v) {
+	op void setValue(EnumIfcBendingParameterSelect s, Object v) {
 		
 		switch(s) {
-			case IFCPRESENTATIONSTYLE:
-				ifcPresentationStyle = v as IfcPresentationStyle
-			case IFCPRESENTATIONSTYLEASSIGNMENT:
-				ifcPresentationStyleAssignment = v as IfcPresentationStyleAssignment
+			case IFCLENGTHMEASURE,
+			case IFCPLANEANGLEMEASURE:
+				doubleValue = v as Double
 			default:
 				throw new IllegalArgumentException
 		}
 	}
 	
 	op Object getValue() {
-		switch(ifcStyleAssignmentSelect) {
-			case IFCPRESENTATIONSTYLE:
-				ifcPresentationStyle
-			case IFCPRESENTATIONSTYLEASSIGNMENT:
-				ifcPresentationStyleAssignment
+		switch(ifcBendingParameterSelect) {
+			case IFCLENGTHMEASURE,
+			case IFCPLANEANGLEMEASURE:
+				doubleValue
 			default:
 				throw new IllegalArgumentException
 		}
 	}
 }
 
-@GenModel(documentation="<ul><li>{@link IFCFACEBASEDSURFACEMODEL} as {@link IfcFaceBasedSurfaceModel}</li>
-		<li>{@link IFCFACESURFACE} as {@link IfcFaceSurface}</li>
-		<li>{@link IFCSURFACE} as {@link IfcSurface}</li></ul>")
+@GenModel(documentation="<ul><li>{@link IFCCOLOURRGB} as {@link IfcColourRgb}</li>
+		<li>{@link IFCNORMALISEDRATIOMEASURE} as {@link Double}</li></ul>")
 @XpressModel(kind="new")
-enum EnumIfcSurfaceOrFaceSurface {
-	IFCFACEBASEDSURFACEMODEL = 0,
-	IFCFACESURFACE = 2,
-	IFCSURFACE = 1
+enum EnumIfcColourOrFactor {
+	IFCCOLOURRGB = 0,
+	IFCNORMALISEDRATIOMEASURE = 1
 }
 
-@GenModel(documentation="Select class of IfcSurfaceOrFaceSurface")
-@XpressModel(name="IfcSurfaceOrFaceSurface",kind="generated")
-class IfcSurfaceOrFaceSurface {
+@GenModel(documentation="Select class of IfcColourOrFactor")
+@XpressModel(name="IfcColourOrFactor",kind="generated")
+class IfcColourOrFactor {
 	
-	EnumIfcSurfaceOrFaceSurface ifcSurfaceOrFaceSurface
+	EnumIfcColourOrFactor ifcColourOrFactor
 	
 	// Principal select value
 	
-	refers IfcFaceBasedSurfaceModel ifcFaceBasedSurfaceModel
-	refers IfcFaceSurface ifcFaceSurface
+	refers IfcColourRgb ifcColourRgb
+	double doubleValue
+	
+	// Operations
+	
+	op void setValue(EnumIfcColourOrFactor s, Object v) {
+		
+		switch(s) {
+			case IFCCOLOURRGB:
+				ifcColourRgb = v as IfcColourRgb
+			case IFCNORMALISEDRATIOMEASURE:
+				doubleValue = v as Double
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcColourOrFactor) {
+			case IFCCOLOURRGB:
+				ifcColourRgb
+			case IFCNORMALISEDRATIOMEASURE:
+				doubleValue
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCCURVE} as {@link IfcCurve}</li>
+		<li>{@link IFCPOINT} as {@link IfcPoint}</li>
+		<li>{@link IFCSURFACE} as {@link IfcSurface}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcGeometricSetSelect {
+	IFCCURVE = 1,
+	IFCPOINT = 0,
+	IFCSURFACE = 2
+}
+
+@GenModel(documentation="Select class of IfcGeometricSetSelect")
+@XpressModel(name="IfcGeometricSetSelect",kind="generated")
+class IfcGeometricSetSelect {
+	
+	EnumIfcGeometricSetSelect ifcGeometricSetSelect
+	
+	// Principal select value
+	
+	refers IfcCurve ifcCurve
+	refers IfcPoint ifcPoint
 	refers IfcSurface ifcSurface
 	
 	// Operations
 	
-	op void setValue(EnumIfcSurfaceOrFaceSurface s, Object v) {
+	op void setValue(EnumIfcGeometricSetSelect s, Object v) {
 		
 		switch(s) {
-			case IFCFACEBASEDSURFACEMODEL:
-				ifcFaceBasedSurfaceModel = v as IfcFaceBasedSurfaceModel
-			case IFCFACESURFACE:
-				ifcFaceSurface = v as IfcFaceSurface
+			case IFCCURVE:
+				ifcCurve = v as IfcCurve
+			case IFCPOINT:
+				ifcPoint = v as IfcPoint
 			case IFCSURFACE:
 				ifcSurface = v as IfcSurface
 			default:
@@ -4702,11 +5704,11 @@ class IfcSurfaceOrFaceSurface {
 	}
 	
 	op Object getValue() {
-		switch(ifcSurfaceOrFaceSurface) {
-			case IFCFACEBASEDSURFACEMODEL:
-				ifcFaceBasedSurfaceModel
-			case IFCFACESURFACE:
-				ifcFaceSurface
+		switch(ifcGeometricSetSelect) {
+			case IFCCURVE:
+				ifcCurve
+			case IFCPOINT:
+				ifcPoint
 			case IFCSURFACE:
 				ifcSurface
 			default:
@@ -4715,135 +5717,45 @@ class IfcSurfaceOrFaceSurface {
 	}
 }
 
-@GenModel(documentation="<ul><li>{@link IFCCARTESIANPOINT} as {@link IfcCartesianPoint}</li>
-		<li>{@link IFCPARAMETERVALUE} as {@link Double}</li></ul>")
+@GenModel(documentation="<ul><li>{@link IFCPOSITIVELENGTHMEASURE} as {@link Double}</li>
+		<li>{@link IFCVECTOR} as {@link IfcVector}</li></ul>")
 @XpressModel(kind="new")
-enum EnumIfcTrimmingSelect {
-	IFCCARTESIANPOINT = 0,
-	IFCPARAMETERVALUE = 1
+enum EnumIfcHatchLineDistanceSelect {
+	IFCPOSITIVELENGTHMEASURE = 1,
+	IFCVECTOR = 0
 }
 
-@GenModel(documentation="Select class of IfcTrimmingSelect")
-@XpressModel(name="IfcTrimmingSelect",kind="generated")
-class IfcTrimmingSelect {
+@GenModel(documentation="Select class of IfcHatchLineDistanceSelect")
+@XpressModel(name="IfcHatchLineDistanceSelect",kind="generated")
+class IfcHatchLineDistanceSelect {
 	
-	EnumIfcTrimmingSelect ifcTrimmingSelect
+	EnumIfcHatchLineDistanceSelect ifcHatchLineDistanceSelect
 	
 	// Principal select value
 	
-	refers IfcCartesianPoint ifcCartesianPoint
 	double doubleValue
+	refers IfcVector ifcVector
 	
 	// Operations
 	
-	op void setValue(EnumIfcTrimmingSelect s, Object v) {
+	op void setValue(EnumIfcHatchLineDistanceSelect s, Object v) {
 		
 		switch(s) {
-			case IFCCARTESIANPOINT:
-				ifcCartesianPoint = v as IfcCartesianPoint
-			case IFCPARAMETERVALUE:
+			case IFCPOSITIVELENGTHMEASURE:
 				doubleValue = v as Double
+			case IFCVECTOR:
+				ifcVector = v as IfcVector
 			default:
 				throw new IllegalArgumentException
 		}
 	}
 	
 	op Object getValue() {
-		switch(ifcTrimmingSelect) {
-			case IFCCARTESIANPOINT:
-				ifcCartesianPoint
-			case IFCPARAMETERVALUE:
+		switch(ifcHatchLineDistanceSelect) {
+			case IFCPOSITIVELENGTHMEASURE:
 				doubleValue
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCCLASSIFICATION} as {@link IfcClassification}</li>
-		<li>{@link IFCCLASSIFICATIONREFERENCE} as {@link IfcClassificationReference}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcClassificationSelect {
-	IFCCLASSIFICATION = 1,
-	IFCCLASSIFICATIONREFERENCE = 0
-}
-
-@GenModel(documentation="Select class of IfcClassificationSelect")
-@XpressModel(name="IfcClassificationSelect",kind="generated")
-class IfcClassificationSelect {
-	
-	EnumIfcClassificationSelect ifcClassificationSelect
-	
-	// Principal select value
-	
-	refers IfcClassification ifcClassification
-	refers IfcClassificationReference ifcClassificationReference
-	
-	// Operations
-	
-	op void setValue(EnumIfcClassificationSelect s, Object v) {
-		
-		switch(s) {
-			case IFCCLASSIFICATION:
-				ifcClassification = v as IfcClassification
-			case IFCCLASSIFICATIONREFERENCE:
-				ifcClassificationReference = v as IfcClassificationReference
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcClassificationSelect) {
-			case IFCCLASSIFICATION:
-				ifcClassification
-			case IFCCLASSIFICATIONREFERENCE:
-				ifcClassificationReference
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCDIRECTION} as {@link IfcDirection}</li>
-		<li>{@link IFCVIRTUALGRIDINTERSECTION} as {@link IfcVirtualGridIntersection}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcGridPlacementDirectionSelect {
-	IFCDIRECTION = 0,
-	IFCVIRTUALGRIDINTERSECTION = 1
-}
-
-@GenModel(documentation="Select class of IfcGridPlacementDirectionSelect")
-@XpressModel(name="IfcGridPlacementDirectionSelect",kind="generated")
-class IfcGridPlacementDirectionSelect {
-	
-	EnumIfcGridPlacementDirectionSelect ifcGridPlacementDirectionSelect
-	
-	// Principal select value
-	
-	refers IfcDirection ifcDirection
-	refers IfcVirtualGridIntersection ifcVirtualGridIntersection
-	
-	// Operations
-	
-	op void setValue(EnumIfcGridPlacementDirectionSelect s, Object v) {
-		
-		switch(s) {
-			case IFCDIRECTION:
-				ifcDirection = v as IfcDirection
-			case IFCVIRTUALGRIDINTERSECTION:
-				ifcVirtualGridIntersection = v as IfcVirtualGridIntersection
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcGridPlacementDirectionSelect) {
-			case IFCDIRECTION:
-				ifcDirection
-			case IFCVIRTUALGRIDINTERSECTION:
-				ifcVirtualGridIntersection
+			case IFCVECTOR:
+				ifcVector
 			default:
 				throw new IllegalArgumentException
 		}
@@ -4895,144 +5807,31 @@ class IfcTimeOrRatioSelect {
 	}
 }
 
-@GenModel(documentation="<ul><li>{@link IFCEXTERNALLYDEFINEDSURFACESTYLE} as {@link IfcExternallyDefinedSurfaceStyle}</li>
-		<li>{@link IFCSURFACESTYLELIGHTING} as {@link IfcSurfaceStyleLighting}</li>
-		<li>{@link IFCSURFACESTYLEREFRACTION} as {@link IfcSurfaceStyleRefraction}</li>
-		<li>{@link IFCSURFACESTYLESHADING} as {@link IfcSurfaceStyleShading}</li>
-		<li>{@link IFCSURFACESTYLEWITHTEXTURES} as {@link IfcSurfaceStyleWithTextures}</li></ul>")
+@GenModel(documentation="<ul><li>{@link IFCSPECULAREXPONENT} as {@link Double}</li>
+		<li>{@link IFCSPECULARROUGHNESS} as {@link Double}</li></ul>")
 @XpressModel(kind="new")
-enum EnumIfcSurfaceStyleElementSelect {
-	IFCEXTERNALLYDEFINEDSURFACESTYLE = 4,
-	IFCSURFACESTYLELIGHTING = 2,
-	IFCSURFACESTYLEREFRACTION = 3,
-	IFCSURFACESTYLESHADING = 0,
-	IFCSURFACESTYLEWITHTEXTURES = 1
+enum EnumIfcSpecularHighlightSelect {
+	IFCSPECULAREXPONENT = 0,
+	IFCSPECULARROUGHNESS = 1
 }
 
-@GenModel(documentation="Select class of IfcSurfaceStyleElementSelect")
-@XpressModel(name="IfcSurfaceStyleElementSelect",kind="generated")
-class IfcSurfaceStyleElementSelect {
+@GenModel(documentation="Select class of IfcSpecularHighlightSelect")
+@XpressModel(name="IfcSpecularHighlightSelect",kind="generated")
+class IfcSpecularHighlightSelect {
 	
-	EnumIfcSurfaceStyleElementSelect ifcSurfaceStyleElementSelect
+	EnumIfcSpecularHighlightSelect ifcSpecularHighlightSelect
 	
 	// Principal select value
 	
-	refers IfcExternallyDefinedSurfaceStyle ifcExternallyDefinedSurfaceStyle
-	refers IfcSurfaceStyleLighting ifcSurfaceStyleLighting
-	refers IfcSurfaceStyleRefraction ifcSurfaceStyleRefraction
-	refers IfcSurfaceStyleShading ifcSurfaceStyleShading
-	refers IfcSurfaceStyleWithTextures ifcSurfaceStyleWithTextures
-	
-	// Operations
-	
-	op void setValue(EnumIfcSurfaceStyleElementSelect s, Object v) {
-		
-		switch(s) {
-			case IFCEXTERNALLYDEFINEDSURFACESTYLE:
-				ifcExternallyDefinedSurfaceStyle = v as IfcExternallyDefinedSurfaceStyle
-			case IFCSURFACESTYLELIGHTING:
-				ifcSurfaceStyleLighting = v as IfcSurfaceStyleLighting
-			case IFCSURFACESTYLEREFRACTION:
-				ifcSurfaceStyleRefraction = v as IfcSurfaceStyleRefraction
-			case IFCSURFACESTYLESHADING:
-				ifcSurfaceStyleShading = v as IfcSurfaceStyleShading
-			case IFCSURFACESTYLEWITHTEXTURES:
-				ifcSurfaceStyleWithTextures = v as IfcSurfaceStyleWithTextures
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcSurfaceStyleElementSelect) {
-			case IFCEXTERNALLYDEFINEDSURFACESTYLE:
-				ifcExternallyDefinedSurfaceStyle
-			case IFCSURFACESTYLELIGHTING:
-				ifcSurfaceStyleLighting
-			case IFCSURFACESTYLEREFRACTION:
-				ifcSurfaceStyleRefraction
-			case IFCSURFACESTYLESHADING:
-				ifcSurfaceStyleShading
-			case IFCSURFACESTYLEWITHTEXTURES:
-				ifcSurfaceStyleWithTextures
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCEXTERNALLYDEFINEDTEXTFONT} as {@link IfcExternallyDefinedTextFont}</li>
-		<li>{@link IFCPREDEFINEDTEXTFONT} as {@link IfcPreDefinedTextFont}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcTextFontSelect {
-	IFCEXTERNALLYDEFINEDTEXTFONT = 1,
-	IFCPREDEFINEDTEXTFONT = 0
-}
-
-@GenModel(documentation="Select class of IfcTextFontSelect")
-@XpressModel(name="IfcTextFontSelect",kind="generated")
-class IfcTextFontSelect {
-	
-	EnumIfcTextFontSelect ifcTextFontSelect
-	
-	// Principal select value
-	
-	refers IfcExternallyDefinedTextFont ifcExternallyDefinedTextFont
-	refers IfcPreDefinedTextFont ifcPreDefinedTextFont
-	
-	// Operations
-	
-	op void setValue(EnumIfcTextFontSelect s, Object v) {
-		
-		switch(s) {
-			case IFCEXTERNALLYDEFINEDTEXTFONT:
-				ifcExternallyDefinedTextFont = v as IfcExternallyDefinedTextFont
-			case IFCPREDEFINEDTEXTFONT:
-				ifcPreDefinedTextFont = v as IfcPreDefinedTextFont
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcTextFontSelect) {
-			case IFCEXTERNALLYDEFINEDTEXTFONT:
-				ifcExternallyDefinedTextFont
-			case IFCPREDEFINEDTEXTFONT:
-				ifcPreDefinedTextFont
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCBOOLEAN} as {@link Boolean}</li>
-		<li>{@link IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE} as {@link Double}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcModulusOfTranslationalSubgradeReactionSelect {
-	IFCBOOLEAN = 1,
-	IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE = 0
-}
-
-@GenModel(documentation="Select class of IfcModulusOfTranslationalSubgradeReactionSelect")
-@XpressModel(name="IfcModulusOfTranslationalSubgradeReactionSelect",kind="generated")
-class IfcModulusOfTranslationalSubgradeReactionSelect {
-	
-	EnumIfcModulusOfTranslationalSubgradeReactionSelect ifcModulusOfTranslationalSubgradeReactionSelect
-	
-	// Principal select value
-	
-	boolean booleanValue
 	double doubleValue
 	
 	// Operations
 	
-	op void setValue(EnumIfcModulusOfTranslationalSubgradeReactionSelect s, Object v) {
+	op void setValue(EnumIfcSpecularHighlightSelect s, Object v) {
 		
 		switch(s) {
-			case IFCBOOLEAN:
-				booleanValue = v as Boolean
-			case IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE:
+			case IFCSPECULAREXPONENT,
+			case IFCSPECULARROUGHNESS:
 				doubleValue = v as Double
 			default:
 				throw new IllegalArgumentException
@@ -5040,10 +5839,9 @@ class IfcModulusOfTranslationalSubgradeReactionSelect {
 	}
 	
 	op Object getValue() {
-		switch(ifcModulusOfTranslationalSubgradeReactionSelect) {
-			case IFCBOOLEAN:
-				booleanValue
-			case IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE:
+		switch(ifcSpecularHighlightSelect) {
+			case IFCSPECULAREXPONENT,
+			case IFCSPECULARROUGHNESS:
 				doubleValue
 			default:
 				throw new IllegalArgumentException
@@ -5051,85 +5849,45 @@ class IfcModulusOfTranslationalSubgradeReactionSelect {
 	}
 }
 
-@GenModel(documentation="<ul><li>{@link IFCORGANIZATION} as {@link IfcOrganization}</li>
-		<li>{@link IFCPERSON} as {@link IfcPerson}</li>
-		<li>{@link IFCPERSONANDORGANIZATION} as {@link IfcPersonAndOrganization}</li></ul>")
+@GenModel(documentation="<ul><li>{@link IFCDESCRIPTIVEMEASURE} as {@link String}</li>
+		<li>{@link IFCLENGTHMEASURE} as {@link Double}</li>
+		<li>{@link IFCNORMALISEDRATIOMEASURE} as {@link Double}</li>
+		<li>{@link IFCPOSITIVELENGTHMEASURE} as {@link Double}</li>
+		<li>{@link IFCPOSITIVERATIOMEASURE} as {@link Double}</li>
+		<li>{@link IFCRATIOMEASURE} as {@link Double}</li></ul>")
 @XpressModel(kind="new")
-enum EnumIfcActorSelect {
-	IFCORGANIZATION = 0,
-	IFCPERSON = 1,
-	IFCPERSONANDORGANIZATION = 2
+enum EnumIfcSizeSelect {
+	IFCDESCRIPTIVEMEASURE = 4,
+	IFCLENGTHMEASURE = 0,
+	IFCNORMALISEDRATIOMEASURE = 1,
+	IFCPOSITIVELENGTHMEASURE = 5,
+	IFCPOSITIVERATIOMEASURE = 2,
+	IFCRATIOMEASURE = 3
 }
 
-@GenModel(documentation="Select class of IfcActorSelect")
-@XpressModel(name="IfcActorSelect",kind="generated")
-class IfcActorSelect {
+@GenModel(documentation="Select class of IfcSizeSelect")
+@XpressModel(name="IfcSizeSelect",kind="generated")
+class IfcSizeSelect {
 	
-	EnumIfcActorSelect ifcActorSelect
+	EnumIfcSizeSelect ifcSizeSelect
 	
 	// Principal select value
 	
-	refers IfcOrganization ifcOrganization
-	refers IfcPerson ifcPerson
-	refers IfcPersonAndOrganization ifcPersonAndOrganization
-	
-	// Operations
-	
-	op void setValue(EnumIfcActorSelect s, Object v) {
-		
-		switch(s) {
-			case IFCORGANIZATION:
-				ifcOrganization = v as IfcOrganization
-			case IFCPERSON:
-				ifcPerson = v as IfcPerson
-			case IFCPERSONANDORGANIZATION:
-				ifcPersonAndOrganization = v as IfcPersonAndOrganization
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcActorSelect) {
-			case IFCORGANIZATION:
-				ifcOrganization
-			case IFCPERSON:
-				ifcPerson
-			case IFCPERSONANDORGANIZATION:
-				ifcPersonAndOrganization
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCBOOLEAN} as {@link Boolean}</li>
-		<li>{@link IFCROTATIONALSTIFFNESSMEASURE} as {@link Double}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcRotationalStiffnessSelect {
-	IFCBOOLEAN = 0,
-	IFCROTATIONALSTIFFNESSMEASURE = 1
-}
-
-@GenModel(documentation="Select class of IfcRotationalStiffnessSelect")
-@XpressModel(name="IfcRotationalStiffnessSelect",kind="generated")
-class IfcRotationalStiffnessSelect {
-	
-	EnumIfcRotationalStiffnessSelect ifcRotationalStiffnessSelect
-	
-	// Principal select value
-	
-	boolean booleanValue
+	String stringValue
 	double doubleValue
 	
 	// Operations
 	
-	op void setValue(EnumIfcRotationalStiffnessSelect s, Object v) {
+	op void setValue(EnumIfcSizeSelect s, Object v) {
 		
 		switch(s) {
-			case IFCBOOLEAN:
-				booleanValue = v as Boolean
-			case IFCROTATIONALSTIFFNESSMEASURE:
+			case IFCDESCRIPTIVEMEASURE:
+				stringValue = v as String
+			case IFCLENGTHMEASURE,
+			case IFCNORMALISEDRATIOMEASURE,
+			case IFCPOSITIVELENGTHMEASURE,
+			case IFCPOSITIVERATIOMEASURE,
+			case IFCRATIOMEASURE:
 				doubleValue = v as Double
 			default:
 				throw new IllegalArgumentException
@@ -5137,10 +5895,14 @@ class IfcRotationalStiffnessSelect {
 	}
 	
 	op Object getValue() {
-		switch(ifcRotationalStiffnessSelect) {
-			case IFCBOOLEAN:
-				booleanValue
-			case IFCROTATIONALSTIFFNESSMEASURE:
+		switch(ifcSizeSelect) {
+			case IFCDESCRIPTIVEMEASURE:
+				stringValue
+			case IFCLENGTHMEASURE,
+			case IFCNORMALISEDRATIOMEASURE,
+			case IFCPOSITIVELENGTHMEASURE,
+			case IFCPOSITIVERATIOMEASURE,
+			case IFCRATIOMEASURE:
 				doubleValue
 			default:
 				throw new IllegalArgumentException
@@ -5148,305 +5910,45 @@ class IfcRotationalStiffnessSelect {
 	}
 }
 
-@GenModel(documentation="<ul><li>{@link IFCBOOLEANRESULT} as {@link IfcBooleanResult}</li>
-		<li>{@link IFCCSGPRIMITIVE3D} as {@link IfcCsgPrimitive3D}</li>
-		<li>{@link IFCHALFSPACESOLID} as {@link IfcHalfSpaceSolid}</li>
-		<li>{@link IFCSOLIDMODEL} as {@link IfcSolidModel}</li></ul>")
+@GenModel(documentation="<ul><li>{@link IFCCURVESTYLEFONT} as {@link IfcCurveStyleFont}</li>
+		<li>{@link IFCPREDEFINEDCURVEFONT} as {@link IfcPreDefinedCurveFont}</li></ul>")
 @XpressModel(kind="new")
-enum EnumIfcBooleanOperand {
-	IFCBOOLEANRESULT = 3,
-	IFCCSGPRIMITIVE3D = 0,
-	IFCHALFSPACESOLID = 1,
-	IFCSOLIDMODEL = 2
+enum EnumIfcCurveStyleFontSelect {
+	IFCCURVESTYLEFONT = 0,
+	IFCPREDEFINEDCURVEFONT = 1
 }
 
-@GenModel(documentation="Select class of IfcBooleanOperand")
-@XpressModel(name="IfcBooleanOperand",kind="generated")
-class IfcBooleanOperand {
+@GenModel(documentation="Select class of IfcCurveStyleFontSelect")
+@XpressModel(name="IfcCurveStyleFontSelect",kind="generated")
+class IfcCurveStyleFontSelect {
 	
-	EnumIfcBooleanOperand ifcBooleanOperand
+	EnumIfcCurveStyleFontSelect ifcCurveStyleFontSelect
 	
 	// Principal select value
 	
-	refers IfcBooleanResult ifcBooleanResult
-	refers IfcCsgPrimitive3D ifcCsgPrimitive3D
-	refers IfcHalfSpaceSolid ifcHalfSpaceSolid
-	refers IfcSolidModel ifcSolidModel
+	refers IfcCurveStyleFont ifcCurveStyleFont
+	refers IfcPreDefinedCurveFont ifcPreDefinedCurveFont
 	
 	// Operations
 	
-	op void setValue(EnumIfcBooleanOperand s, Object v) {
+	op void setValue(EnumIfcCurveStyleFontSelect s, Object v) {
 		
 		switch(s) {
-			case IFCBOOLEANRESULT:
-				ifcBooleanResult = v as IfcBooleanResult
-			case IFCCSGPRIMITIVE3D:
-				ifcCsgPrimitive3D = v as IfcCsgPrimitive3D
-			case IFCHALFSPACESOLID:
-				ifcHalfSpaceSolid = v as IfcHalfSpaceSolid
-			case IFCSOLIDMODEL:
-				ifcSolidModel = v as IfcSolidModel
+			case IFCCURVESTYLEFONT:
+				ifcCurveStyleFont = v as IfcCurveStyleFont
+			case IFCPREDEFINEDCURVEFONT:
+				ifcPreDefinedCurveFont = v as IfcPreDefinedCurveFont
 			default:
 				throw new IllegalArgumentException
 		}
 	}
 	
 	op Object getValue() {
-		switch(ifcBooleanOperand) {
-			case IFCBOOLEANRESULT:
-				ifcBooleanResult
-			case IFCCSGPRIMITIVE3D:
-				ifcCsgPrimitive3D
-			case IFCHALFSPACESOLID:
-				ifcHalfSpaceSolid
-			case IFCSOLIDMODEL:
-				ifcSolidModel
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCEXTERNALREFERENCE} as {@link IfcExternalReference}</li>
-		<li>{@link IFCLIGHTINTENSITYDISTRIBUTION} as {@link IfcLightIntensityDistribution}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcLightDistributionDataSourceSelect {
-	IFCEXTERNALREFERENCE = 0,
-	IFCLIGHTINTENSITYDISTRIBUTION = 1
-}
-
-@GenModel(documentation="Select class of IfcLightDistributionDataSourceSelect")
-@XpressModel(name="IfcLightDistributionDataSourceSelect",kind="generated")
-class IfcLightDistributionDataSourceSelect {
-	
-	EnumIfcLightDistributionDataSourceSelect ifcLightDistributionDataSourceSelect
-	
-	// Principal select value
-	
-	refers IfcExternalReference ifcExternalReference
-	refers IfcLightIntensityDistribution ifcLightIntensityDistribution
-	
-	// Operations
-	
-	op void setValue(EnumIfcLightDistributionDataSourceSelect s, Object v) {
-		
-		switch(s) {
-			case IFCEXTERNALREFERENCE:
-				ifcExternalReference = v as IfcExternalReference
-			case IFCLIGHTINTENSITYDISTRIBUTION:
-				ifcLightIntensityDistribution = v as IfcLightIntensityDistribution
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcLightDistributionDataSourceSelect) {
-			case IFCEXTERNALREFERENCE:
-				ifcExternalReference
-			case IFCLIGHTINTENSITYDISTRIBUTION:
-				ifcLightIntensityDistribution
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCBOOLEAN} as {@link Boolean}</li>
-		<li>{@link IFCLINEARSTIFFNESSMEASURE} as {@link Double}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcTranslationalStiffnessSelect {
-	IFCBOOLEAN = 0,
-	IFCLINEARSTIFFNESSMEASURE = 1
-}
-
-@GenModel(documentation="Select class of IfcTranslationalStiffnessSelect")
-@XpressModel(name="IfcTranslationalStiffnessSelect",kind="generated")
-class IfcTranslationalStiffnessSelect {
-	
-	EnumIfcTranslationalStiffnessSelect ifcTranslationalStiffnessSelect
-	
-	// Principal select value
-	
-	boolean booleanValue
-	double doubleValue
-	
-	// Operations
-	
-	op void setValue(EnumIfcTranslationalStiffnessSelect s, Object v) {
-		
-		switch(s) {
-			case IFCBOOLEAN:
-				booleanValue = v as Boolean
-			case IFCLINEARSTIFFNESSMEASURE:
-				doubleValue = v as Double
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcTranslationalStiffnessSelect) {
-			case IFCBOOLEAN:
-				booleanValue
-			case IFCLINEARSTIFFNESSMEASURE:
-				doubleValue
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCCOLOURSPECIFICATION} as {@link IfcColourSpecification}</li>
-		<li>{@link IFCEXTERNALLYDEFINEDHATCHSTYLE} as {@link IfcExternallyDefinedHatchStyle}</li>
-		<li>{@link IFCFILLAREASTYLEHATCHING} as {@link IfcFillAreaStyleHatching}</li>
-		<li>{@link IFCFILLAREASTYLETILES} as {@link IfcFillAreaStyleTiles}</li>
-		<li>{@link IFCPREDEFINEDCOLOUR} as {@link IfcPreDefinedColour}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcFillStyleSelect {
-	IFCCOLOURSPECIFICATION = 1,
-	IFCEXTERNALLYDEFINEDHATCHSTYLE = 0,
-	IFCFILLAREASTYLEHATCHING = 4,
-	IFCFILLAREASTYLETILES = 2,
-	IFCPREDEFINEDCOLOUR = 3
-}
-
-@GenModel(documentation="Select class of IfcFillStyleSelect")
-@XpressModel(name="IfcFillStyleSelect",kind="generated")
-class IfcFillStyleSelect {
-	
-	EnumIfcFillStyleSelect ifcFillStyleSelect
-	
-	// Principal select value
-	
-	refers IfcColourSpecification ifcColourSpecification
-	refers IfcExternallyDefinedHatchStyle ifcExternallyDefinedHatchStyle
-	refers IfcFillAreaStyleHatching ifcFillAreaStyleHatching
-	refers IfcFillAreaStyleTiles ifcFillAreaStyleTiles
-	refers IfcPreDefinedColour ifcPreDefinedColour
-	
-	// Operations
-	
-	op void setValue(EnumIfcFillStyleSelect s, Object v) {
-		
-		switch(s) {
-			case IFCCOLOURSPECIFICATION:
-				ifcColourSpecification = v as IfcColourSpecification
-			case IFCEXTERNALLYDEFINEDHATCHSTYLE:
-				ifcExternallyDefinedHatchStyle = v as IfcExternallyDefinedHatchStyle
-			case IFCFILLAREASTYLEHATCHING:
-				ifcFillAreaStyleHatching = v as IfcFillAreaStyleHatching
-			case IFCFILLAREASTYLETILES:
-				ifcFillAreaStyleTiles = v as IfcFillAreaStyleTiles
-			case IFCPREDEFINEDCOLOUR:
-				ifcPreDefinedColour = v as IfcPreDefinedColour
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcFillStyleSelect) {
-			case IFCCOLOURSPECIFICATION:
-				ifcColourSpecification
-			case IFCEXTERNALLYDEFINEDHATCHSTYLE:
-				ifcExternallyDefinedHatchStyle
-			case IFCFILLAREASTYLEHATCHING:
-				ifcFillAreaStyleHatching
-			case IFCFILLAREASTYLETILES:
-				ifcFillAreaStyleTiles
-			case IFCPREDEFINEDCOLOUR:
-				ifcPreDefinedColour
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCBOOLEANRESULT} as {@link IfcBooleanResult}</li>
-		<li>{@link IFCCSGPRIMITIVE3D} as {@link IfcCsgPrimitive3D}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcCsgSelect {
-	IFCBOOLEANRESULT = 0,
-	IFCCSGPRIMITIVE3D = 1
-}
-
-@GenModel(documentation="Select class of IfcCsgSelect")
-@XpressModel(name="IfcCsgSelect",kind="generated")
-class IfcCsgSelect {
-	
-	EnumIfcCsgSelect ifcCsgSelect
-	
-	// Principal select value
-	
-	refers IfcBooleanResult ifcBooleanResult
-	refers IfcCsgPrimitive3D ifcCsgPrimitive3D
-	
-	// Operations
-	
-	op void setValue(EnumIfcCsgSelect s, Object v) {
-		
-		switch(s) {
-			case IFCBOOLEANRESULT:
-				ifcBooleanResult = v as IfcBooleanResult
-			case IFCCSGPRIMITIVE3D:
-				ifcCsgPrimitive3D = v as IfcCsgPrimitive3D
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcCsgSelect) {
-			case IFCBOOLEANRESULT:
-				ifcBooleanResult
-			case IFCCSGPRIMITIVE3D:
-				ifcCsgPrimitive3D
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCCLOSEDSHELL} as {@link IfcClosedShell}</li>
-		<li>{@link IFCOPENSHELL} as {@link IfcOpenShell}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcShell {
-	IFCCLOSEDSHELL = 0,
-	IFCOPENSHELL = 1
-}
-
-@GenModel(documentation="Select class of IfcShell")
-@XpressModel(name="IfcShell",kind="generated")
-class IfcShell {
-	
-	EnumIfcShell ifcShell
-	
-	// Principal select value
-	
-	refers IfcClosedShell ifcClosedShell
-	refers IfcOpenShell ifcOpenShell
-	
-	// Operations
-	
-	op void setValue(EnumIfcShell s, Object v) {
-		
-		switch(s) {
-			case IFCCLOSEDSHELL:
-				ifcClosedShell = v as IfcClosedShell
-			case IFCOPENSHELL:
-				ifcOpenShell = v as IfcOpenShell
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcShell) {
-			case IFCCLOSEDSHELL:
-				ifcClosedShell
-			case IFCOPENSHELL:
-				ifcOpenShell
+		switch(ifcCurveStyleFontSelect) {
+			case IFCCURVESTYLEFONT:
+				ifcCurveStyleFont
+			case IFCPREDEFINEDCURVEFONT:
+				ifcPreDefinedCurveFont
 			default:
 				throw new IllegalArgumentException
 		}
@@ -5498,142 +6000,45 @@ class IfcCurveOrEdgeCurve {
 	}
 }
 
-@GenModel(documentation="<ul><li>{@link IFCBOOLEAN} as {@link Boolean}</li>
-		<li>{@link IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE} as {@link Double}</li></ul>")
+@GenModel(documentation="<ul><li>{@link IFCPRESENTATIONSTYLE} as {@link IfcPresentationStyle}</li>
+		<li>{@link IFCPRESENTATIONSTYLEASSIGNMENT} as {@link IfcPresentationStyleAssignment}</li></ul>")
 @XpressModel(kind="new")
-enum EnumIfcModulusOfRotationalSubgradeReactionSelect {
-	IFCBOOLEAN = 0,
-	IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE = 1
+enum EnumIfcStyleAssignmentSelect {
+	IFCPRESENTATIONSTYLE = 1,
+	IFCPRESENTATIONSTYLEASSIGNMENT = 0
 }
 
-@GenModel(documentation="Select class of IfcModulusOfRotationalSubgradeReactionSelect")
-@XpressModel(name="IfcModulusOfRotationalSubgradeReactionSelect",kind="generated")
-class IfcModulusOfRotationalSubgradeReactionSelect {
+@GenModel(documentation="Select class of IfcStyleAssignmentSelect")
+@XpressModel(name="IfcStyleAssignmentSelect",kind="generated")
+class IfcStyleAssignmentSelect {
 	
-	EnumIfcModulusOfRotationalSubgradeReactionSelect ifcModulusOfRotationalSubgradeReactionSelect
+	EnumIfcStyleAssignmentSelect ifcStyleAssignmentSelect
 	
 	// Principal select value
 	
-	boolean booleanValue
-	double doubleValue
+	refers IfcPresentationStyle ifcPresentationStyle
+	refers IfcPresentationStyleAssignment ifcPresentationStyleAssignment
 	
 	// Operations
 	
-	op void setValue(EnumIfcModulusOfRotationalSubgradeReactionSelect s, Object v) {
+	op void setValue(EnumIfcStyleAssignmentSelect s, Object v) {
 		
 		switch(s) {
-			case IFCBOOLEAN:
-				booleanValue = v as Boolean
-			case IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE:
-				doubleValue = v as Double
+			case IFCPRESENTATIONSTYLE:
+				ifcPresentationStyle = v as IfcPresentationStyle
+			case IFCPRESENTATIONSTYLEASSIGNMENT:
+				ifcPresentationStyleAssignment = v as IfcPresentationStyleAssignment
 			default:
 				throw new IllegalArgumentException
 		}
 	}
 	
 	op Object getValue() {
-		switch(ifcModulusOfRotationalSubgradeReactionSelect) {
-			case IFCBOOLEAN:
-				booleanValue
-			case IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE:
-				doubleValue
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCCURVESTYLEFONT} as {@link IfcCurveStyleFont}</li>
-		<li>{@link IFCCURVESTYLEFONTANDSCALING} as {@link IfcCurveStyleFontAndScaling}</li>
-		<li>{@link IFCPREDEFINEDCURVEFONT} as {@link IfcPreDefinedCurveFont}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcCurveFontOrScaledCurveFontSelect {
-	IFCCURVESTYLEFONT = 1,
-	IFCCURVESTYLEFONTANDSCALING = 0,
-	IFCPREDEFINEDCURVEFONT = 2
-}
-
-@GenModel(documentation="Select class of IfcCurveFontOrScaledCurveFontSelect")
-@XpressModel(name="IfcCurveFontOrScaledCurveFontSelect",kind="generated")
-class IfcCurveFontOrScaledCurveFontSelect {
-	
-	EnumIfcCurveFontOrScaledCurveFontSelect ifcCurveFontOrScaledCurveFontSelect
-	
-	// Principal select value
-	
-	refers IfcCurveStyleFont ifcCurveStyleFont
-	refers IfcCurveStyleFontAndScaling ifcCurveStyleFontAndScaling
-	refers IfcPreDefinedCurveFont ifcPreDefinedCurveFont
-	
-	// Operations
-	
-	op void setValue(EnumIfcCurveFontOrScaledCurveFontSelect s, Object v) {
-		
-		switch(s) {
-			case IFCCURVESTYLEFONT:
-				ifcCurveStyleFont = v as IfcCurveStyleFont
-			case IFCCURVESTYLEFONTANDSCALING:
-				ifcCurveStyleFontAndScaling = v as IfcCurveStyleFontAndScaling
-			case IFCPREDEFINEDCURVEFONT:
-				ifcPreDefinedCurveFont = v as IfcPreDefinedCurveFont
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcCurveFontOrScaledCurveFontSelect) {
-			case IFCCURVESTYLEFONT:
-				ifcCurveStyleFont
-			case IFCCURVESTYLEFONTANDSCALING:
-				ifcCurveStyleFontAndScaling
-			case IFCPREDEFINEDCURVEFONT:
-				ifcPreDefinedCurveFont
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCCLOSEDSHELL} as {@link IfcClosedShell}</li>
-		<li>{@link IFCSOLIDMODEL} as {@link IfcSolidModel}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcSolidOrShell {
-	IFCCLOSEDSHELL = 0,
-	IFCSOLIDMODEL = 1
-}
-
-@GenModel(documentation="Select class of IfcSolidOrShell")
-@XpressModel(name="IfcSolidOrShell",kind="generated")
-class IfcSolidOrShell {
-	
-	EnumIfcSolidOrShell ifcSolidOrShell
-	
-	// Principal select value
-	
-	refers IfcClosedShell ifcClosedShell
-	refers IfcSolidModel ifcSolidModel
-	
-	// Operations
-	
-	op void setValue(EnumIfcSolidOrShell s, Object v) {
-		
-		switch(s) {
-			case IFCCLOSEDSHELL:
-				ifcClosedShell = v as IfcClosedShell
-			case IFCSOLIDMODEL:
-				ifcSolidModel = v as IfcSolidModel
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcSolidOrShell) {
-			case IFCCLOSEDSHELL:
-				ifcClosedShell
-			case IFCSOLIDMODEL:
-				ifcSolidModel
+		switch(ifcStyleAssignmentSelect) {
+			case IFCPRESENTATIONSTYLE:
+				ifcPresentationStyle
+			case IFCPRESENTATIONSTYLEASSIGNMENT:
+				ifcPresentationStyleAssignment
 			default:
 				throw new IllegalArgumentException
 		}
@@ -5685,283 +6090,12 @@ class IfcColour {
 	}
 }
 
-@GenModel(documentation="<ul><li>{@link IFCADDRESS} as {@link IfcAddress}</li>
-		<li>{@link IFCAPPLIEDVALUE} as {@link IfcAppliedValue}</li>
-		<li>{@link IFCEXTERNALREFERENCE} as {@link IfcExternalReference}</li>
-		<li>{@link IFCMATERIALDEFINITION} as {@link IfcMaterialDefinition}</li>
-		<li>{@link IFCORGANIZATION} as {@link IfcOrganization}</li>
-		<li>{@link IFCPERSON} as {@link IfcPerson}</li>
-		<li>{@link IFCPERSONANDORGANIZATION} as {@link IfcPersonAndOrganization}</li>
-		<li>{@link IFCTABLE} as {@link IfcTable}</li>
-		<li>{@link IFCTIMESERIES} as {@link IfcTimeSeries}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcObjectReferenceSelect {
-	IFCADDRESS = 7,
-	IFCAPPLIEDVALUE = 0,
-	IFCEXTERNALREFERENCE = 5,
-	IFCMATERIALDEFINITION = 1,
-	IFCORGANIZATION = 3,
-	IFCPERSON = 8,
-	IFCPERSONANDORGANIZATION = 2,
-	IFCTABLE = 4,
-	IFCTIMESERIES = 6
-}
-
-@GenModel(documentation="Select class of IfcObjectReferenceSelect")
-@XpressModel(name="IfcObjectReferenceSelect",kind="generated")
-class IfcObjectReferenceSelect {
-	
-	EnumIfcObjectReferenceSelect ifcObjectReferenceSelect
-	
-	// Principal select value
-	
-	refers IfcAddress ifcAddress
-	refers IfcAppliedValue ifcAppliedValue
-	refers IfcExternalReference ifcExternalReference
-	refers IfcMaterialDefinition ifcMaterialDefinition
-	refers IfcOrganization ifcOrganization
-	refers IfcPerson ifcPerson
-	refers IfcPersonAndOrganization ifcPersonAndOrganization
-	refers IfcTable ifcTable
-	refers IfcTimeSeries ifcTimeSeries
-	
-	// Operations
-	
-	op void setValue(EnumIfcObjectReferenceSelect s, Object v) {
-		
-		switch(s) {
-			case IFCADDRESS:
-				ifcAddress = v as IfcAddress
-			case IFCAPPLIEDVALUE:
-				ifcAppliedValue = v as IfcAppliedValue
-			case IFCEXTERNALREFERENCE:
-				ifcExternalReference = v as IfcExternalReference
-			case IFCMATERIALDEFINITION:
-				ifcMaterialDefinition = v as IfcMaterialDefinition
-			case IFCORGANIZATION:
-				ifcOrganization = v as IfcOrganization
-			case IFCPERSON:
-				ifcPerson = v as IfcPerson
-			case IFCPERSONANDORGANIZATION:
-				ifcPersonAndOrganization = v as IfcPersonAndOrganization
-			case IFCTABLE:
-				ifcTable = v as IfcTable
-			case IFCTIMESERIES:
-				ifcTimeSeries = v as IfcTimeSeries
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcObjectReferenceSelect) {
-			case IFCADDRESS:
-				ifcAddress
-			case IFCAPPLIEDVALUE:
-				ifcAppliedValue
-			case IFCEXTERNALREFERENCE:
-				ifcExternalReference
-			case IFCMATERIALDEFINITION:
-				ifcMaterialDefinition
-			case IFCORGANIZATION:
-				ifcOrganization
-			case IFCPERSON:
-				ifcPerson
-			case IFCPERSONANDORGANIZATION:
-				ifcPersonAndOrganization
-			case IFCTABLE:
-				ifcTable
-			case IFCTIMESERIES:
-				ifcTimeSeries
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCBOOLEAN} as {@link Boolean}</li>
-		<li>{@link IFCWARPINGMOMENTMEASURE} as {@link Double}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcWarpingStiffnessSelect {
-	IFCBOOLEAN = 0,
-	IFCWARPINGMOMENTMEASURE = 1
-}
-
-@GenModel(documentation="Select class of IfcWarpingStiffnessSelect")
-@XpressModel(name="IfcWarpingStiffnessSelect",kind="generated")
-class IfcWarpingStiffnessSelect {
-	
-	EnumIfcWarpingStiffnessSelect ifcWarpingStiffnessSelect
-	
-	// Principal select value
-	
-	boolean booleanValue
-	double doubleValue
-	
-	// Operations
-	
-	op void setValue(EnumIfcWarpingStiffnessSelect s, Object v) {
-		
-		switch(s) {
-			case IFCBOOLEAN:
-				booleanValue = v as Boolean
-			case IFCWARPINGMOMENTMEASURE:
-				doubleValue = v as Double
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcWarpingStiffnessSelect) {
-			case IFCBOOLEAN:
-				booleanValue
-			case IFCWARPINGMOMENTMEASURE:
-				doubleValue
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCLENGTHMEASURE} as {@link Double}</li>
-		<li>{@link IFCPLANEANGLEMEASURE} as {@link Double}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcBendingParameterSelect {
-	IFCLENGTHMEASURE = 1,
-	IFCPLANEANGLEMEASURE = 0
-}
-
-@GenModel(documentation="Select class of IfcBendingParameterSelect")
-@XpressModel(name="IfcBendingParameterSelect",kind="generated")
-class IfcBendingParameterSelect {
-	
-	EnumIfcBendingParameterSelect ifcBendingParameterSelect
-	
-	// Principal select value
-	
-	double doubleValue
-	
-	// Operations
-	
-	op void setValue(EnumIfcBendingParameterSelect s, Object v) {
-		
-		switch(s) {
-			case IFCLENGTHMEASURE,
-			case IFCPLANEANGLEMEASURE:
-				doubleValue = v as Double
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcBendingParameterSelect) {
-			case IFCLENGTHMEASURE,
-			case IFCPLANEANGLEMEASURE:
-				doubleValue
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCPOSITIVELENGTHMEASURE} as {@link Double}</li>
-		<li>{@link IFCVECTOR} as {@link IfcVector}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcHatchLineDistanceSelect {
-	IFCPOSITIVELENGTHMEASURE = 0,
-	IFCVECTOR = 1
-}
-
-@GenModel(documentation="Select class of IfcHatchLineDistanceSelect")
-@XpressModel(name="IfcHatchLineDistanceSelect",kind="generated")
-class IfcHatchLineDistanceSelect {
-	
-	EnumIfcHatchLineDistanceSelect ifcHatchLineDistanceSelect
-	
-	// Principal select value
-	
-	double doubleValue
-	refers IfcVector ifcVector
-	
-	// Operations
-	
-	op void setValue(EnumIfcHatchLineDistanceSelect s, Object v) {
-		
-		switch(s) {
-			case IFCPOSITIVELENGTHMEASURE:
-				doubleValue = v as Double
-			case IFCVECTOR:
-				ifcVector = v as IfcVector
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcHatchLineDistanceSelect) {
-			case IFCPOSITIVELENGTHMEASURE:
-				doubleValue
-			case IFCVECTOR:
-				ifcVector
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCCOLOURRGB} as {@link IfcColourRgb}</li>
-		<li>{@link IFCNORMALISEDRATIOMEASURE} as {@link Double}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcColourOrFactor {
-	IFCCOLOURRGB = 1,
-	IFCNORMALISEDRATIOMEASURE = 0
-}
-
-@GenModel(documentation="Select class of IfcColourOrFactor")
-@XpressModel(name="IfcColourOrFactor",kind="generated")
-class IfcColourOrFactor {
-	
-	EnumIfcColourOrFactor ifcColourOrFactor
-	
-	// Principal select value
-	
-	refers IfcColourRgb ifcColourRgb
-	double doubleValue
-	
-	// Operations
-	
-	op void setValue(EnumIfcColourOrFactor s, Object v) {
-		
-		switch(s) {
-			case IFCCOLOURRGB:
-				ifcColourRgb = v as IfcColourRgb
-			case IFCNORMALISEDRATIOMEASURE:
-				doubleValue = v as Double
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcColourOrFactor) {
-			case IFCCOLOURRGB:
-				ifcColourRgb
-			case IFCNORMALISEDRATIOMEASURE:
-				doubleValue
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
 @GenModel(documentation="<ul><li>{@link IFCPOINT} as {@link IfcPoint}</li>
 		<li>{@link IFCVERTEXPOINT} as {@link IfcVertexPoint}</li></ul>")
 @XpressModel(kind="new")
 enum EnumIfcPointOrVertexPoint {
-	IFCPOINT = 1,
-	IFCVERTEXPOINT = 0
+	IFCPOINT = 0,
+	IFCVERTEXPOINT = 1
 }
 
 @GenModel(documentation="Select class of IfcPointOrVertexPoint")
@@ -5995,58 +6129,6 @@ class IfcPointOrVertexPoint {
 				ifcPoint
 			case IFCVERTEXPOINT:
 				ifcVertexPoint
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCDERIVEDUNIT} as {@link IfcDerivedUnit}</li>
-		<li>{@link IFCMONETARYUNIT} as {@link IfcMonetaryUnit}</li>
-		<li>{@link IFCNAMEDUNIT} as {@link IfcNamedUnit}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcUnit {
-	IFCDERIVEDUNIT = 0,
-	IFCMONETARYUNIT = 1,
-	IFCNAMEDUNIT = 2
-}
-
-@GenModel(documentation="Select class of IfcUnit")
-@XpressModel(name="IfcUnit",kind="generated")
-class IfcUnit {
-	
-	EnumIfcUnit ifcUnit
-	
-	// Principal select value
-	
-	refers IfcDerivedUnit ifcDerivedUnit
-	refers IfcMonetaryUnit ifcMonetaryUnit
-	refers IfcNamedUnit ifcNamedUnit
-	
-	// Operations
-	
-	op void setValue(EnumIfcUnit s, Object v) {
-		
-		switch(s) {
-			case IFCDERIVEDUNIT:
-				ifcDerivedUnit = v as IfcDerivedUnit
-			case IFCMONETARYUNIT:
-				ifcMonetaryUnit = v as IfcMonetaryUnit
-			case IFCNAMEDUNIT:
-				ifcNamedUnit = v as IfcNamedUnit
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcUnit) {
-			case IFCDERIVEDUNIT:
-				ifcDerivedUnit
-			case IFCMONETARYUNIT:
-				ifcMonetaryUnit
-			case IFCNAMEDUNIT:
-				ifcNamedUnit
 			default:
 				throw new IllegalArgumentException
 		}
@@ -6167,118 +6249,118 @@ class IfcUnit {
 		<li>{@link IFCWARPINGMOMENTMEASURE} as {@link Double}</li></ul>")
 @XpressModel(kind="new")
 enum EnumIfcMetricValueSelect {
-	IFCABSORBEDDOSEMEASURE = 17,
-	IFCACCELERATIONMEASURE = 49,
-	IFCAMOUNTOFSUBSTANCEMEASURE = 73,
-	IFCANGULARVELOCITYMEASURE = 29,
-	IFCAPPLIEDVALUE = 68,
-	IFCAREADENSITYMEASURE = 0,
-	IFCAREAMEASURE = 99,
-	IFCBOOLEAN = 33,
-	IFCCOMPLEXNUMBER = 42,
-	IFCCOMPOUNDPLANEANGLEMEASURE = 93,
-	IFCCONTEXTDEPENDENTMEASURE = 95,
-	IFCCOUNTMEASURE = 24,
-	IFCCURVATUREMEASURE = 82,
-	IFCDATE = 5,
-	IFCDATETIME = 70,
-	IFCDESCRIPTIVEMEASURE = 84,
-	IFCDOSEEQUIVALENTMEASURE = 103,
-	IFCDURATION = 71,
-	IFCDYNAMICVISCOSITYMEASURE = 88,
-	IFCELECTRICCAPACITANCEMEASURE = 78,
-	IFCELECTRICCHARGEMEASURE = 34,
-	IFCELECTRICCONDUCTANCEMEASURE = 44,
-	IFCELECTRICCURRENTMEASURE = 3,
-	IFCELECTRICRESISTANCEMEASURE = 55,
-	IFCELECTRICVOLTAGEMEASURE = 22,
-	IFCENERGYMEASURE = 100,
-	IFCFORCEMEASURE = 51,
-	IFCFREQUENCYMEASURE = 50,
-	IFCHEATFLUXDENSITYMEASURE = 75,
-	IFCHEATINGVALUEMEASURE = 35,
-	IFCIDENTIFIER = 108,
-	IFCILLUMINANCEMEASURE = 31,
-	IFCINDUCTANCEMEASURE = 10,
-	IFCINTEGER = 15,
-	IFCINTEGERCOUNTRATEMEASURE = 79,
-	IFCIONCONCENTRATIONMEASURE = 9,
-	IFCISOTHERMALMOISTURECAPACITYMEASURE = 16,
-	IFCKINEMATICVISCOSITYMEASURE = 57,
-	IFCLABEL = 92,
-	IFCLENGTHMEASURE = 25,
-	IFCLINEARFORCEMEASURE = 76,
-	IFCLINEARMOMENTMEASURE = 12,
-	IFCLINEARSTIFFNESSMEASURE = 4,
-	IFCLINEARVELOCITYMEASURE = 91,
-	IFCLOGICAL = 40,
-	IFCLUMINOUSFLUXMEASURE = 45,
-	IFCLUMINOUSINTENSITYDISTRIBUTIONMEASURE = 107,
-	IFCLUMINOUSINTENSITYMEASURE = 2,
-	IFCMAGNETICFLUXDENSITYMEASURE = 41,
-	IFCMAGNETICFLUXMEASURE = 69,
-	IFCMASSDENSITYMEASURE = 110,
-	IFCMASSFLOWRATEMEASURE = 67,
-	IFCMASSMEASURE = 47,
-	IFCMASSPERLENGTHMEASURE = 80,
-	IFCMEASUREWITHUNIT = 53,
-	IFCMODULUSOFELASTICITYMEASURE = 30,
-	IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE = 101,
-	IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE = 63,
-	IFCMODULUSOFSUBGRADEREACTIONMEASURE = 46,
-	IFCMOISTUREDIFFUSIVITYMEASURE = 64,
-	IFCMOLECULARWEIGHTMEASURE = 20,
-	IFCMOMENTOFINERTIAMEASURE = 104,
-	IFCMONETARYMEASURE = 61,
-	IFCNONNEGATIVELENGTHMEASURE = 48,
-	IFCNORMALISEDRATIOMEASURE = 106,
-	IFCNUMERICMEASURE = 39,
-	IFCPHMEASURE = 36,
-	IFCPARAMETERVALUE = 6,
-	IFCPLANARFORCEMEASURE = 14,
-	IFCPLANEANGLEMEASURE = 86,
-	IFCPOSITIVEINTEGER = 59,
-	IFCPOSITIVELENGTHMEASURE = 19,
-	IFCPOSITIVEPLANEANGLEMEASURE = 32,
-	IFCPOSITIVERATIOMEASURE = 54,
-	IFCPOWERMEASURE = 77,
-	IFCPRESSUREMEASURE = 37,
-	IFCRADIOACTIVITYMEASURE = 27,
-	IFCRATIOMEASURE = 11,
-	IFCREAL = 62,
-	IFCREFERENCE = 66,
-	IFCROTATIONALFREQUENCYMEASURE = 1,
-	IFCROTATIONALMASSMEASURE = 102,
-	IFCROTATIONALSTIFFNESSMEASURE = 83,
-	IFCSECTIONMODULUSMEASURE = 105,
-	IFCSECTIONALAREAINTEGRALMEASURE = 13,
-	IFCSHEARMODULUSMEASURE = 85,
-	IFCSOLIDANGLEMEASURE = 60,
-	IFCSOUNDPOWERLEVELMEASURE = 52,
-	IFCSOUNDPOWERMEASURE = 111,
-	IFCSOUNDPRESSURELEVELMEASURE = 89,
-	IFCSOUNDPRESSUREMEASURE = 81,
-	IFCSPECIFICHEATCAPACITYMEASURE = 38,
-	IFCTABLE = 72,
-	IFCTEMPERATUREGRADIENTMEASURE = 18,
-	IFCTEMPERATURERATEOFCHANGEMEASURE = 58,
-	IFCTEXT = 8,
-	IFCTHERMALADMITTANCEMEASURE = 97,
-	IFCTHERMALCONDUCTIVITYMEASURE = 98,
-	IFCTHERMALEXPANSIONCOEFFICIENTMEASURE = 109,
-	IFCTHERMALRESISTANCEMEASURE = 21,
+	IFCABSORBEDDOSEMEASURE = 93,
+	IFCACCELERATIONMEASURE = 62,
+	IFCAMOUNTOFSUBSTANCEMEASURE = 45,
+	IFCANGULARVELOCITYMEASURE = 35,
+	IFCAPPLIEDVALUE = 82,
+	IFCAREADENSITYMEASURE = 41,
+	IFCAREAMEASURE = 75,
+	IFCBOOLEAN = 39,
+	IFCCOMPLEXNUMBER = 65,
+	IFCCOMPOUNDPLANEANGLEMEASURE = 53,
+	IFCCONTEXTDEPENDENTMEASURE = 32,
+	IFCCOUNTMEASURE = 5,
+	IFCCURVATUREMEASURE = 80,
+	IFCDATE = 9,
+	IFCDATETIME = 42,
+	IFCDESCRIPTIVEMEASURE = 88,
+	IFCDOSEEQUIVALENTMEASURE = 26,
+	IFCDURATION = 57,
+	IFCDYNAMICVISCOSITYMEASURE = 37,
+	IFCELECTRICCAPACITANCEMEASURE = 111,
+	IFCELECTRICCHARGEMEASURE = 61,
+	IFCELECTRICCONDUCTANCEMEASURE = 99,
+	IFCELECTRICCURRENTMEASURE = 83,
+	IFCELECTRICRESISTANCEMEASURE = 0,
+	IFCELECTRICVOLTAGEMEASURE = 108,
+	IFCENERGYMEASURE = 14,
+	IFCFORCEMEASURE = 49,
+	IFCFREQUENCYMEASURE = 36,
+	IFCHEATFLUXDENSITYMEASURE = 101,
+	IFCHEATINGVALUEMEASURE = 17,
+	IFCIDENTIFIER = 24,
+	IFCILLUMINANCEMEASURE = 27,
+	IFCINDUCTANCEMEASURE = 60,
+	IFCINTEGER = 34,
+	IFCINTEGERCOUNTRATEMEASURE = 102,
+	IFCIONCONCENTRATIONMEASURE = 95,
+	IFCISOTHERMALMOISTURECAPACITYMEASURE = 78,
+	IFCKINEMATICVISCOSITYMEASURE = 8,
+	IFCLABEL = 105,
+	IFCLENGTHMEASURE = 44,
+	IFCLINEARFORCEMEASURE = 38,
+	IFCLINEARMOMENTMEASURE = 31,
+	IFCLINEARSTIFFNESSMEASURE = 58,
+	IFCLINEARVELOCITYMEASURE = 23,
+	IFCLOGICAL = 20,
+	IFCLUMINOUSFLUXMEASURE = 18,
+	IFCLUMINOUSINTENSITYDISTRIBUTIONMEASURE = 106,
+	IFCLUMINOUSINTENSITYMEASURE = 43,
+	IFCMAGNETICFLUXDENSITYMEASURE = 70,
+	IFCMAGNETICFLUXMEASURE = 85,
+	IFCMASSDENSITYMEASURE = 103,
+	IFCMASSFLOWRATEMEASURE = 94,
+	IFCMASSMEASURE = 56,
+	IFCMASSPERLENGTHMEASURE = 6,
+	IFCMEASUREWITHUNIT = 50,
+	IFCMODULUSOFELASTICITYMEASURE = 97,
+	IFCMODULUSOFLINEARSUBGRADEREACTIONMEASURE = 104,
+	IFCMODULUSOFROTATIONALSUBGRADEREACTIONMEASURE = 16,
+	IFCMODULUSOFSUBGRADEREACTIONMEASURE = 1,
+	IFCMOISTUREDIFFUSIVITYMEASURE = 76,
+	IFCMOLECULARWEIGHTMEASURE = 77,
+	IFCMOMENTOFINERTIAMEASURE = 12,
+	IFCMONETARYMEASURE = 11,
+	IFCNONNEGATIVELENGTHMEASURE = 29,
+	IFCNORMALISEDRATIOMEASURE = 25,
+	IFCNUMERICMEASURE = 13,
+	IFCPHMEASURE = 84,
+	IFCPARAMETERVALUE = 71,
+	IFCPLANARFORCEMEASURE = 28,
+	IFCPLANEANGLEMEASURE = 22,
+	IFCPOSITIVEINTEGER = 33,
+	IFCPOSITIVELENGTHMEASURE = 81,
+	IFCPOSITIVEPLANEANGLEMEASURE = 74,
+	IFCPOSITIVERATIOMEASURE = 47,
+	IFCPOWERMEASURE = 46,
+	IFCPRESSUREMEASURE = 54,
+	IFCRADIOACTIVITYMEASURE = 86,
+	IFCRATIOMEASURE = 100,
+	IFCREAL = 98,
+	IFCREFERENCE = 90,
+	IFCROTATIONALFREQUENCYMEASURE = 55,
+	IFCROTATIONALMASSMEASURE = 89,
+	IFCROTATIONALSTIFFNESSMEASURE = 51,
+	IFCSECTIONMODULUSMEASURE = 30,
+	IFCSECTIONALAREAINTEGRALMEASURE = 48,
+	IFCSHEARMODULUSMEASURE = 72,
+	IFCSOLIDANGLEMEASURE = 109,
+	IFCSOUNDPOWERLEVELMEASURE = 69,
+	IFCSOUNDPOWERMEASURE = 91,
+	IFCSOUNDPRESSURELEVELMEASURE = 87,
+	IFCSOUNDPRESSUREMEASURE = 4,
+	IFCSPECIFICHEATCAPACITYMEASURE = 107,
+	IFCTABLE = 52,
+	IFCTEMPERATUREGRADIENTMEASURE = 3,
+	IFCTEMPERATURERATEOFCHANGEMEASURE = 40,
+	IFCTEXT = 2,
+	IFCTHERMALADMITTANCEMEASURE = 21,
+	IFCTHERMALCONDUCTIVITYMEASURE = 19,
+	IFCTHERMALEXPANSIONCOEFFICIENTMEASURE = 110,
+	IFCTHERMALRESISTANCEMEASURE = 10,
 	IFCTHERMALTRANSMITTANCEMEASURE = 96,
-	IFCTHERMODYNAMICTEMPERATUREMEASURE = 43,
-	IFCTIME = 28,
-	IFCTIMEMEASURE = 90,
-	IFCTIMESERIES = 74,
-	IFCTIMESTAMP = 26,
-	IFCTORQUEMEASURE = 87,
-	IFCVAPORPERMEABILITYMEASURE = 23,
-	IFCVOLUMEMEASURE = 7,
-	IFCVOLUMETRICFLOWRATEMEASURE = 65,
-	IFCWARPINGCONSTANTMEASURE = 94,
-	IFCWARPINGMOMENTMEASURE = 56
+	IFCTHERMODYNAMICTEMPERATUREMEASURE = 67,
+	IFCTIME = 79,
+	IFCTIMEMEASURE = 68,
+	IFCTIMESERIES = 66,
+	IFCTIMESTAMP = 73,
+	IFCTORQUEMEASURE = 15,
+	IFCVAPORPERMEABILITYMEASURE = 59,
+	IFCVOLUMEMEASURE = 63,
+	IFCVOLUMETRICFLOWRATEMEASURE = 7,
+	IFCWARPINGCONSTANTMEASURE = 92,
+	IFCWARPINGMOMENTMEASURE = 64
 }
 
 @GenModel(documentation="Select class of IfcMetricValueSelect")
@@ -6290,16 +6372,16 @@ class IfcMetricValueSelect {
 	// Principal select value
 	
 	refers IfcAppliedValue ifcAppliedValue
-	double doubleValue
 	boolean booleanValue
 	contains IfcComplexNumber ifcComplexNumber
 	contains IfcCompoundPlaneAngleMeasure ifcCompoundPlaneAngleMeasure
-	String stringValue
-	int intValue
+	double doubleValue
 	Logical logicalValue
 	refers IfcMeasureWithUnit ifcMeasureWithUnit
+	int intValue
 	refers IfcReference ifcReference
 	refers IfcTable ifcTable
+	String stringValue
 	refers IfcTimeSeries ifcTimeSeries
 	
 	// Operations
@@ -6309,6 +6391,12 @@ class IfcMetricValueSelect {
 		switch(s) {
 			case IFCAPPLIEDVALUE:
 				ifcAppliedValue = v as IfcAppliedValue
+			case IFCBOOLEAN:
+				booleanValue = v as Boolean
+			case IFCCOMPLEXNUMBER:
+				ifcComplexNumber = v as IfcComplexNumber
+			case IFCCOMPOUNDPLANEANGLEMEASURE:
+				ifcCompoundPlaneAngleMeasure = v as IfcCompoundPlaneAngleMeasure
 			case IFCABSORBEDDOSEMEASURE,
 			case IFCACCELERATIONMEASURE,
 			case IFCAMOUNTOFSUBSTANCEMEASURE,
@@ -6401,12 +6489,19 @@ class IfcMetricValueSelect {
 			case IFCWARPINGCONSTANTMEASURE,
 			case IFCWARPINGMOMENTMEASURE:
 				doubleValue = v as Double
-			case IFCBOOLEAN:
-				booleanValue = v as Boolean
-			case IFCCOMPLEXNUMBER:
-				ifcComplexNumber = v as IfcComplexNumber
-			case IFCCOMPOUNDPLANEANGLEMEASURE:
-				ifcCompoundPlaneAngleMeasure = v as IfcCompoundPlaneAngleMeasure
+			case IFCLOGICAL:
+				logicalValue = v as Logical
+			case IFCMEASUREWITHUNIT:
+				ifcMeasureWithUnit = v as IfcMeasureWithUnit
+			case IFCINTEGER,
+			case IFCINTEGERCOUNTRATEMEASURE,
+			case IFCPOSITIVEINTEGER,
+			case IFCTIMESTAMP:
+				intValue = v as Integer
+			case IFCREFERENCE:
+				ifcReference = v as IfcReference
+			case IFCTABLE:
+				ifcTable = v as IfcTable
 			case IFCDATE,
 			case IFCDATETIME,
 			case IFCDESCRIPTIVEMEASURE,
@@ -6416,19 +6511,6 @@ class IfcMetricValueSelect {
 			case IFCTEXT,
 			case IFCTIME:
 				stringValue = v as String
-			case IFCINTEGER,
-			case IFCINTEGERCOUNTRATEMEASURE,
-			case IFCPOSITIVEINTEGER,
-			case IFCTIMESTAMP:
-				intValue = v as Integer
-			case IFCLOGICAL:
-				logicalValue = v as Logical
-			case IFCMEASUREWITHUNIT:
-				ifcMeasureWithUnit = v as IfcMeasureWithUnit
-			case IFCREFERENCE:
-				ifcReference = v as IfcReference
-			case IFCTABLE:
-				ifcTable = v as IfcTable
 			case IFCTIMESERIES:
 				ifcTimeSeries = v as IfcTimeSeries
 			default:
@@ -6440,6 +6522,12 @@ class IfcMetricValueSelect {
 		switch(ifcMetricValueSelect) {
 			case IFCAPPLIEDVALUE:
 				ifcAppliedValue
+			case IFCBOOLEAN:
+				booleanValue
+			case IFCCOMPLEXNUMBER:
+				ifcComplexNumber
+			case IFCCOMPOUNDPLANEANGLEMEASURE:
+				ifcCompoundPlaneAngleMeasure
 			case IFCABSORBEDDOSEMEASURE,
 			case IFCACCELERATIONMEASURE,
 			case IFCAMOUNTOFSUBSTANCEMEASURE,
@@ -6532,12 +6620,19 @@ class IfcMetricValueSelect {
 			case IFCWARPINGCONSTANTMEASURE,
 			case IFCWARPINGMOMENTMEASURE:
 				doubleValue
-			case IFCBOOLEAN:
-				booleanValue
-			case IFCCOMPLEXNUMBER:
-				ifcComplexNumber
-			case IFCCOMPOUNDPLANEANGLEMEASURE:
-				ifcCompoundPlaneAngleMeasure
+			case IFCLOGICAL:
+				logicalValue
+			case IFCMEASUREWITHUNIT:
+				ifcMeasureWithUnit
+			case IFCINTEGER,
+			case IFCINTEGERCOUNTRATEMEASURE,
+			case IFCPOSITIVEINTEGER,
+			case IFCTIMESTAMP:
+				intValue
+			case IFCREFERENCE:
+				ifcReference
+			case IFCTABLE:
+				ifcTable
 			case IFCDATE,
 			case IFCDATETIME,
 			case IFCDESCRIPTIVEMEASURE,
@@ -6547,172 +6642,8 @@ class IfcMetricValueSelect {
 			case IFCTEXT,
 			case IFCTIME:
 				stringValue
-			case IFCINTEGER,
-			case IFCINTEGERCOUNTRATEMEASURE,
-			case IFCPOSITIVEINTEGER,
-			case IFCTIMESTAMP:
-				intValue
-			case IFCLOGICAL:
-				logicalValue
-			case IFCMEASUREWITHUNIT:
-				ifcMeasureWithUnit
-			case IFCREFERENCE:
-				ifcReference
-			case IFCTABLE:
-				ifcTable
 			case IFCTIMESERIES:
 				ifcTimeSeries
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCAXIS2PLACEMENT2D} as {@link IfcAxis2Placement2D}</li>
-		<li>{@link IFCAXIS2PLACEMENT3D} as {@link IfcAxis2Placement3D}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcAxis2Placement {
-	IFCAXIS2PLACEMENT2D = 1,
-	IFCAXIS2PLACEMENT3D = 0
-}
-
-@GenModel(documentation="Select class of IfcAxis2Placement")
-@XpressModel(name="IfcAxis2Placement",kind="generated")
-class IfcAxis2Placement {
-	
-	EnumIfcAxis2Placement ifcAxis2Placement
-	
-	// Principal select value
-	
-	refers IfcAxis2Placement2D ifcAxis2Placement2D
-	refers IfcAxis2Placement3D ifcAxis2Placement3D
-	
-	// Operations
-	
-	op void setValue(EnumIfcAxis2Placement s, Object v) {
-		
-		switch(s) {
-			case IFCAXIS2PLACEMENT2D:
-				ifcAxis2Placement2D = v as IfcAxis2Placement2D
-			case IFCAXIS2PLACEMENT3D:
-				ifcAxis2Placement3D = v as IfcAxis2Placement3D
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcAxis2Placement) {
-			case IFCAXIS2PLACEMENT2D:
-				ifcAxis2Placement2D
-			case IFCAXIS2PLACEMENT3D:
-				ifcAxis2Placement3D
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCDESCRIPTIVEMEASURE} as {@link String}</li>
-		<li>{@link IFCLENGTHMEASURE} as {@link Double}</li>
-		<li>{@link IFCNORMALISEDRATIOMEASURE} as {@link Double}</li>
-		<li>{@link IFCPOSITIVELENGTHMEASURE} as {@link Double}</li>
-		<li>{@link IFCPOSITIVERATIOMEASURE} as {@link Double}</li>
-		<li>{@link IFCRATIOMEASURE} as {@link Double}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcSizeSelect {
-	IFCDESCRIPTIVEMEASURE = 4,
-	IFCLENGTHMEASURE = 3,
-	IFCNORMALISEDRATIOMEASURE = 1,
-	IFCPOSITIVELENGTHMEASURE = 0,
-	IFCPOSITIVERATIOMEASURE = 5,
-	IFCRATIOMEASURE = 2
-}
-
-@GenModel(documentation="Select class of IfcSizeSelect")
-@XpressModel(name="IfcSizeSelect",kind="generated")
-class IfcSizeSelect {
-	
-	EnumIfcSizeSelect ifcSizeSelect
-	
-	// Principal select value
-	
-	String stringValue
-	double doubleValue
-	
-	// Operations
-	
-	op void setValue(EnumIfcSizeSelect s, Object v) {
-		
-		switch(s) {
-			case IFCDESCRIPTIVEMEASURE:
-				stringValue = v as String
-			case IFCLENGTHMEASURE,
-			case IFCNORMALISEDRATIOMEASURE,
-			case IFCPOSITIVELENGTHMEASURE,
-			case IFCPOSITIVERATIOMEASURE,
-			case IFCRATIOMEASURE:
-				doubleValue = v as Double
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcSizeSelect) {
-			case IFCDESCRIPTIVEMEASURE:
-				stringValue
-			case IFCLENGTHMEASURE,
-			case IFCNORMALISEDRATIOMEASURE,
-			case IFCPOSITIVELENGTHMEASURE,
-			case IFCPOSITIVERATIOMEASURE,
-			case IFCRATIOMEASURE:
-				doubleValue
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCBOOLEAN} as {@link Boolean}</li>
-		<li>{@link IFCMODULUSOFSUBGRADEREACTIONMEASURE} as {@link Double}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcModulusOfSubgradeReactionSelect {
-	IFCBOOLEAN = 0,
-	IFCMODULUSOFSUBGRADEREACTIONMEASURE = 1
-}
-
-@GenModel(documentation="Select class of IfcModulusOfSubgradeReactionSelect")
-@XpressModel(name="IfcModulusOfSubgradeReactionSelect",kind="generated")
-class IfcModulusOfSubgradeReactionSelect {
-	
-	EnumIfcModulusOfSubgradeReactionSelect ifcModulusOfSubgradeReactionSelect
-	
-	// Principal select value
-	
-	boolean booleanValue
-	double doubleValue
-	
-	// Operations
-	
-	op void setValue(EnumIfcModulusOfSubgradeReactionSelect s, Object v) {
-		
-		switch(s) {
-			case IFCBOOLEAN:
-				booleanValue = v as Boolean
-			case IFCMODULUSOFSUBGRADEREACTIONMEASURE:
-				doubleValue = v as Double
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcModulusOfSubgradeReactionSelect) {
-			case IFCBOOLEAN:
-				booleanValue
-			case IFCMODULUSOFSUBGRADEREACTIONMEASURE:
-				doubleValue
 			default:
 				throw new IllegalArgumentException
 		}
@@ -6726,10 +6657,10 @@ class IfcModulusOfSubgradeReactionSelect {
 		<li>{@link IFCTEXTSTYLE} as {@link IfcTextStyle}</li></ul>")
 @XpressModel(kind="new")
 enum EnumIfcPresentationStyleSelect {
-	IFCCURVESTYLE = 2,
-	IFCFILLAREASTYLE = 4,
+	IFCCURVESTYLE = 3,
+	IFCFILLAREASTYLE = 2,
 	IFCNULLSTYLE = 0,
-	IFCSURFACESTYLE = 3,
+	IFCSURFACESTYLE = 4,
 	IFCTEXTSTYLE = 1
 }
 
@@ -6785,42 +6716,163 @@ class IfcPresentationStyleSelect {
 	}
 }
 
-@GenModel(documentation="<ul><li>{@link IFCSPECULAREXPONENT} as {@link Double}</li>
-		<li>{@link IFCSPECULARROUGHNESS} as {@link Double}</li></ul>")
+@GenModel(documentation="<ul><li>{@link IFCCURVESTYLEFONT} as {@link IfcCurveStyleFont}</li>
+		<li>{@link IFCCURVESTYLEFONTANDSCALING} as {@link IfcCurveStyleFontAndScaling}</li>
+		<li>{@link IFCPREDEFINEDCURVEFONT} as {@link IfcPreDefinedCurveFont}</li></ul>")
 @XpressModel(kind="new")
-enum EnumIfcSpecularHighlightSelect {
-	IFCSPECULAREXPONENT = 0,
-	IFCSPECULARROUGHNESS = 1
+enum EnumIfcCurveFontOrScaledCurveFontSelect {
+	IFCCURVESTYLEFONT = 0,
+	IFCCURVESTYLEFONTANDSCALING = 2,
+	IFCPREDEFINEDCURVEFONT = 1
 }
 
-@GenModel(documentation="Select class of IfcSpecularHighlightSelect")
-@XpressModel(name="IfcSpecularHighlightSelect",kind="generated")
-class IfcSpecularHighlightSelect {
+@GenModel(documentation="Select class of IfcCurveFontOrScaledCurveFontSelect")
+@XpressModel(name="IfcCurveFontOrScaledCurveFontSelect",kind="generated")
+class IfcCurveFontOrScaledCurveFontSelect {
 	
-	EnumIfcSpecularHighlightSelect ifcSpecularHighlightSelect
+	EnumIfcCurveFontOrScaledCurveFontSelect ifcCurveFontOrScaledCurveFontSelect
 	
 	// Principal select value
 	
-	double doubleValue
+	refers IfcCurveStyleFont ifcCurveStyleFont
+	refers IfcCurveStyleFontAndScaling ifcCurveStyleFontAndScaling
+	refers IfcPreDefinedCurveFont ifcPreDefinedCurveFont
 	
 	// Operations
 	
-	op void setValue(EnumIfcSpecularHighlightSelect s, Object v) {
+	op void setValue(EnumIfcCurveFontOrScaledCurveFontSelect s, Object v) {
 		
 		switch(s) {
-			case IFCSPECULAREXPONENT,
-			case IFCSPECULARROUGHNESS:
-				doubleValue = v as Double
+			case IFCCURVESTYLEFONT:
+				ifcCurveStyleFont = v as IfcCurveStyleFont
+			case IFCCURVESTYLEFONTANDSCALING:
+				ifcCurveStyleFontAndScaling = v as IfcCurveStyleFontAndScaling
+			case IFCPREDEFINEDCURVEFONT:
+				ifcPreDefinedCurveFont = v as IfcPreDefinedCurveFont
 			default:
 				throw new IllegalArgumentException
 		}
 	}
 	
 	op Object getValue() {
-		switch(ifcSpecularHighlightSelect) {
-			case IFCSPECULAREXPONENT,
-			case IFCSPECULARROUGHNESS:
-				doubleValue
+		switch(ifcCurveFontOrScaledCurveFontSelect) {
+			case IFCCURVESTYLEFONT:
+				ifcCurveStyleFont
+			case IFCCURVESTYLEFONTANDSCALING:
+				ifcCurveStyleFontAndScaling
+			case IFCPREDEFINEDCURVEFONT:
+				ifcPreDefinedCurveFont
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCEXTERNALLYDEFINEDSURFACESTYLE} as {@link IfcExternallyDefinedSurfaceStyle}</li>
+		<li>{@link IFCSURFACESTYLELIGHTING} as {@link IfcSurfaceStyleLighting}</li>
+		<li>{@link IFCSURFACESTYLEREFRACTION} as {@link IfcSurfaceStyleRefraction}</li>
+		<li>{@link IFCSURFACESTYLESHADING} as {@link IfcSurfaceStyleShading}</li>
+		<li>{@link IFCSURFACESTYLEWITHTEXTURES} as {@link IfcSurfaceStyleWithTextures}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcSurfaceStyleElementSelect {
+	IFCEXTERNALLYDEFINEDSURFACESTYLE = 1,
+	IFCSURFACESTYLELIGHTING = 2,
+	IFCSURFACESTYLEREFRACTION = 3,
+	IFCSURFACESTYLESHADING = 4,
+	IFCSURFACESTYLEWITHTEXTURES = 0
+}
+
+@GenModel(documentation="Select class of IfcSurfaceStyleElementSelect")
+@XpressModel(name="IfcSurfaceStyleElementSelect",kind="generated")
+class IfcSurfaceStyleElementSelect {
+	
+	EnumIfcSurfaceStyleElementSelect ifcSurfaceStyleElementSelect
+	
+	// Principal select value
+	
+	refers IfcExternallyDefinedSurfaceStyle ifcExternallyDefinedSurfaceStyle
+	refers IfcSurfaceStyleLighting ifcSurfaceStyleLighting
+	refers IfcSurfaceStyleRefraction ifcSurfaceStyleRefraction
+	refers IfcSurfaceStyleShading ifcSurfaceStyleShading
+	refers IfcSurfaceStyleWithTextures ifcSurfaceStyleWithTextures
+	
+	// Operations
+	
+	op void setValue(EnumIfcSurfaceStyleElementSelect s, Object v) {
+		
+		switch(s) {
+			case IFCEXTERNALLYDEFINEDSURFACESTYLE:
+				ifcExternallyDefinedSurfaceStyle = v as IfcExternallyDefinedSurfaceStyle
+			case IFCSURFACESTYLELIGHTING:
+				ifcSurfaceStyleLighting = v as IfcSurfaceStyleLighting
+			case IFCSURFACESTYLEREFRACTION:
+				ifcSurfaceStyleRefraction = v as IfcSurfaceStyleRefraction
+			case IFCSURFACESTYLESHADING:
+				ifcSurfaceStyleShading = v as IfcSurfaceStyleShading
+			case IFCSURFACESTYLEWITHTEXTURES:
+				ifcSurfaceStyleWithTextures = v as IfcSurfaceStyleWithTextures
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcSurfaceStyleElementSelect) {
+			case IFCEXTERNALLYDEFINEDSURFACESTYLE:
+				ifcExternallyDefinedSurfaceStyle
+			case IFCSURFACESTYLELIGHTING:
+				ifcSurfaceStyleLighting
+			case IFCSURFACESTYLEREFRACTION:
+				ifcSurfaceStyleRefraction
+			case IFCSURFACESTYLESHADING:
+				ifcSurfaceStyleShading
+			case IFCSURFACESTYLEWITHTEXTURES:
+				ifcSurfaceStyleWithTextures
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+}
+
+@GenModel(documentation="<ul><li>{@link IFCDIRECTION} as {@link IfcDirection}</li>
+		<li>{@link IFCVIRTUALGRIDINTERSECTION} as {@link IfcVirtualGridIntersection}</li></ul>")
+@XpressModel(kind="new")
+enum EnumIfcGridPlacementDirectionSelect {
+	IFCDIRECTION = 1,
+	IFCVIRTUALGRIDINTERSECTION = 0
+}
+
+@GenModel(documentation="Select class of IfcGridPlacementDirectionSelect")
+@XpressModel(name="IfcGridPlacementDirectionSelect",kind="generated")
+class IfcGridPlacementDirectionSelect {
+	
+	EnumIfcGridPlacementDirectionSelect ifcGridPlacementDirectionSelect
+	
+	// Principal select value
+	
+	refers IfcDirection ifcDirection
+	refers IfcVirtualGridIntersection ifcVirtualGridIntersection
+	
+	// Operations
+	
+	op void setValue(EnumIfcGridPlacementDirectionSelect s, Object v) {
+		
+		switch(s) {
+			case IFCDIRECTION:
+				ifcDirection = v as IfcDirection
+			case IFCVIRTUALGRIDINTERSECTION:
+				ifcVirtualGridIntersection = v as IfcVirtualGridIntersection
+			default:
+				throw new IllegalArgumentException
+		}
+	}
+	
+	op Object getValue() {
+		switch(ifcGridPlacementDirectionSelect) {
+			case IFCDIRECTION:
+				ifcDirection
+			case IFCVIRTUALGRIDINTERSECTION:
+				ifcVirtualGridIntersection
 			default:
 				throw new IllegalArgumentException
 		}
@@ -6831,8 +6883,8 @@ class IfcSpecularHighlightSelect {
 		<li>{@link IFCLINEINDEX} as {@link IfcLineIndex}</li></ul>")
 @XpressModel(kind="new")
 enum EnumIfcSegmentIndexSelect {
-	IFCARCINDEX = 1,
-	IFCLINEINDEX = 0
+	IFCARCINDEX = 0,
+	IFCLINEINDEX = 1
 }
 
 @GenModel(documentation="Select class of IfcSegmentIndexSelect")
@@ -6866,58 +6918,6 @@ class IfcSegmentIndexSelect {
 				ifcArcIndex
 			case IFCLINEINDEX:
 				ifcLineIndex
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-}
-
-@GenModel(documentation="<ul><li>{@link IFCCURVE} as {@link IfcCurve}</li>
-		<li>{@link IFCPOINT} as {@link IfcPoint}</li>
-		<li>{@link IFCSURFACE} as {@link IfcSurface}</li></ul>")
-@XpressModel(kind="new")
-enum EnumIfcGeometricSetSelect {
-	IFCCURVE = 0,
-	IFCPOINT = 2,
-	IFCSURFACE = 1
-}
-
-@GenModel(documentation="Select class of IfcGeometricSetSelect")
-@XpressModel(name="IfcGeometricSetSelect",kind="generated")
-class IfcGeometricSetSelect {
-	
-	EnumIfcGeometricSetSelect ifcGeometricSetSelect
-	
-	// Principal select value
-	
-	refers IfcCurve ifcCurve
-	refers IfcPoint ifcPoint
-	refers IfcSurface ifcSurface
-	
-	// Operations
-	
-	op void setValue(EnumIfcGeometricSetSelect s, Object v) {
-		
-		switch(s) {
-			case IFCCURVE:
-				ifcCurve = v as IfcCurve
-			case IFCPOINT:
-				ifcPoint = v as IfcPoint
-			case IFCSURFACE:
-				ifcSurface = v as IfcSurface
-			default:
-				throw new IllegalArgumentException
-		}
-	}
-	
-	op Object getValue() {
-		switch(ifcGeometricSetSelect) {
-			case IFCCURVE:
-				ifcCurve
-			case IFCPOINT:
-				ifcPoint
-			case IFCSURFACE:
-				ifcSurface
 			default:
 				throw new IllegalArgumentException
 		}
@@ -16445,32 +16445,25 @@ interface DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
 	refers IfcExternalReferenceRelationship ifcExternalReferenceRelationship opposite relatedResourceObjects
 }
 
+@GenModel(documentation="Inverse delegation helper between IfcMaterialDefinition and IfcExternalReferenceRelationship")
+@XpressModel(kind="new", pattern="delegate",select="IfcMaterialDefinition")
+class DelegateIfcMaterialDefinitionIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
+	// Containment on declaring side of IfcMaterialDefinition
+	container IfcMaterialDefinition relatedResourceObjects opposite hasExternalReferences	
+}
+
+@GenModel(documentation="Inverse delegation helper between IfcActorRole and IfcExternalReferenceRelationship")
+@XpressModel(kind="new", pattern="delegate",select="IfcActorRole")
+class DelegateIfcActorRoleIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
+	// Containment on declaring side of IfcActorRole
+	container IfcActorRole relatedResourceObjects opposite hasExternalReference	
+}
+
 @GenModel(documentation="Inverse delegation helper between IfcApproval and IfcExternalReferenceRelationship")
 @XpressModel(kind="new", pattern="delegate",select="IfcApproval")
 class DelegateIfcApprovalIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
 	// Containment on declaring side of IfcApproval
 	container IfcApproval relatedResourceObjects opposite hasExternalReferences	
-}
-
-@GenModel(documentation="Inverse delegation helper between IfcPropertyAbstraction and IfcExternalReferenceRelationship")
-@XpressModel(kind="new", pattern="delegate",select="IfcPropertyAbstraction")
-class DelegateIfcPropertyAbstractionIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
-	// Containment on declaring side of IfcPropertyAbstraction
-	container IfcPropertyAbstraction relatedResourceObjects opposite hasExternalReferences	
-}
-
-@GenModel(documentation="Inverse delegation helper between IfcTimeSeries and IfcExternalReferenceRelationship")
-@XpressModel(kind="new", pattern="delegate",select="IfcTimeSeries")
-class DelegateIfcTimeSeriesIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
-	// Containment on declaring side of IfcTimeSeries
-	container IfcTimeSeries relatedResourceObjects opposite hasExternalReference	
-}
-
-@GenModel(documentation="Inverse delegation helper between IfcAppliedValue and IfcExternalReferenceRelationship")
-@XpressModel(kind="new", pattern="delegate",select="IfcAppliedValue")
-class DelegateIfcAppliedValueIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
-	// Containment on declaring side of IfcAppliedValue
-	container IfcAppliedValue relatedResourceObjects opposite hasExternalReference	
 }
 
 @GenModel(documentation="Inverse delegation helper between IfcConversionBasedUnit and IfcExternalReferenceRelationship")
@@ -16480,25 +16473,32 @@ class DelegateIfcConversionBasedUnitIfcExternalReferenceRelationship extends Del
 	container IfcConversionBasedUnit relatedResourceObjects opposite hasExternalReference	
 }
 
-@GenModel(documentation="Inverse delegation helper between IfcMaterialDefinition and IfcExternalReferenceRelationship")
-@XpressModel(kind="new", pattern="delegate",select="IfcMaterialDefinition")
-class DelegateIfcMaterialDefinitionIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
-	// Containment on declaring side of IfcMaterialDefinition
-	container IfcMaterialDefinition relatedResourceObjects opposite hasExternalReferences	
+@GenModel(documentation="Inverse delegation helper between IfcProfileDef and IfcExternalReferenceRelationship")
+@XpressModel(kind="new", pattern="delegate",select="IfcProfileDef")
+class DelegateIfcProfileDefIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
+	// Containment on declaring side of IfcProfileDef
+	container IfcProfileDef relatedResourceObjects opposite hasExternalReference	
 }
 
-@GenModel(documentation="Inverse delegation helper between IfcContextDependentUnit and IfcExternalReferenceRelationship")
-@XpressModel(kind="new", pattern="delegate",select="IfcContextDependentUnit")
-class DelegateIfcContextDependentUnitIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
-	// Containment on declaring side of IfcContextDependentUnit
-	container IfcContextDependentUnit relatedResourceObjects opposite hasExternalReference	
+@GenModel(documentation="Inverse delegation helper between IfcAppliedValue and IfcExternalReferenceRelationship")
+@XpressModel(kind="new", pattern="delegate",select="IfcAppliedValue")
+class DelegateIfcAppliedValueIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
+	// Containment on declaring side of IfcAppliedValue
+	container IfcAppliedValue relatedResourceObjects opposite hasExternalReference	
 }
 
-@GenModel(documentation="Inverse delegation helper between IfcPhysicalQuantity and IfcExternalReferenceRelationship")
-@XpressModel(kind="new", pattern="delegate",select="IfcPhysicalQuantity")
-class DelegateIfcPhysicalQuantityIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
-	// Containment on declaring side of IfcPhysicalQuantity
-	container IfcPhysicalQuantity relatedResourceObjects opposite hasExternalReferences	
+@GenModel(documentation="Inverse delegation helper between IfcTimeSeries and IfcExternalReferenceRelationship")
+@XpressModel(kind="new", pattern="delegate",select="IfcTimeSeries")
+class DelegateIfcTimeSeriesIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
+	// Containment on declaring side of IfcTimeSeries
+	container IfcTimeSeries relatedResourceObjects opposite hasExternalReference	
+}
+
+@GenModel(documentation="Inverse delegation helper between IfcPropertyAbstraction and IfcExternalReferenceRelationship")
+@XpressModel(kind="new", pattern="delegate",select="IfcPropertyAbstraction")
+class DelegateIfcPropertyAbstractionIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
+	// Containment on declaring side of IfcPropertyAbstraction
+	container IfcPropertyAbstraction relatedResourceObjects opposite hasExternalReferences	
 }
 
 @GenModel(documentation="Inverse delegation helper between IfcConstraint and IfcExternalReferenceRelationship")
@@ -16508,18 +16508,18 @@ class DelegateIfcConstraintIfcExternalReferenceRelationship extends DelegateIfcE
 	container IfcConstraint relatedResourceObjects opposite hasExternalReferences	
 }
 
-@GenModel(documentation="Inverse delegation helper between IfcProfileDef and IfcExternalReferenceRelationship")
-@XpressModel(kind="new", pattern="delegate",select="IfcProfileDef")
-class DelegateIfcProfileDefIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
-	// Containment on declaring side of IfcProfileDef
-	container IfcProfileDef relatedResourceObjects opposite hasExternalReference	
+@GenModel(documentation="Inverse delegation helper between IfcPhysicalQuantity and IfcExternalReferenceRelationship")
+@XpressModel(kind="new", pattern="delegate",select="IfcPhysicalQuantity")
+class DelegateIfcPhysicalQuantityIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
+	// Containment on declaring side of IfcPhysicalQuantity
+	container IfcPhysicalQuantity relatedResourceObjects opposite hasExternalReferences	
 }
 
-@GenModel(documentation="Inverse delegation helper between IfcActorRole and IfcExternalReferenceRelationship")
-@XpressModel(kind="new", pattern="delegate",select="IfcActorRole")
-class DelegateIfcActorRoleIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
-	// Containment on declaring side of IfcActorRole
-	container IfcActorRole relatedResourceObjects opposite hasExternalReference	
+@GenModel(documentation="Inverse delegation helper between IfcContextDependentUnit and IfcExternalReferenceRelationship")
+@XpressModel(kind="new", pattern="delegate",select="IfcContextDependentUnit")
+class DelegateIfcContextDependentUnitIfcExternalReferenceRelationship extends DelegateIfcExternalReferenceRelationshipIfcResourceObjectSelect {
+	// Containment on declaring side of IfcContextDependentUnit
+	container IfcContextDependentUnit relatedResourceObjects opposite hasExternalReference	
 }
 
 @XpressModel(kind="new", pattern="delegate")
@@ -16531,18 +16531,18 @@ interface DelegateIfcRelContainedInSpatialStructureIfcProduct {
 	refers IfcRelContainedInSpatialStructure ifcRelContainedInSpatialStructure opposite relatedElements
 }
 
-@GenModel(documentation="Inverse delegation helper between IfcAnnotation and IfcRelContainedInSpatialStructure")
-@XpressModel(kind="new", pattern="delegate")
-class DelegateIfcAnnotationIfcRelContainedInSpatialStructure extends DelegateIfcRelContainedInSpatialStructureIfcProduct {
-	// Containment on declaring side of IfcAnnotation
-	container IfcAnnotation relatedElements opposite containedInStructure	
-}
-
 @GenModel(documentation="Inverse delegation helper between IfcElement and IfcRelContainedInSpatialStructure")
 @XpressModel(kind="new", pattern="delegate")
 class DelegateIfcElementIfcRelContainedInSpatialStructure extends DelegateIfcRelContainedInSpatialStructureIfcProduct {
 	// Containment on declaring side of IfcElement
 	container IfcElement relatedElements opposite containedInStructure	
+}
+
+@GenModel(documentation="Inverse delegation helper between IfcAnnotation and IfcRelContainedInSpatialStructure")
+@XpressModel(kind="new", pattern="delegate")
+class DelegateIfcAnnotationIfcRelContainedInSpatialStructure extends DelegateIfcRelContainedInSpatialStructureIfcProduct {
+	// Containment on declaring side of IfcAnnotation
+	container IfcAnnotation relatedElements opposite containedInStructure	
 }
 
 @GenModel(documentation="Inverse delegation helper between IfcGrid and IfcRelContainedInSpatialStructure")
@@ -16598,18 +16598,18 @@ interface DelegateIfcClassificationReferenceIfcClassificationReferenceSelect {
 	refers IfcClassificationReference ifcClassificationReference opposite referencedSource
 }
 
-@GenModel(documentation="Inverse delegation helper between IfcClassification and IfcClassificationReference")
-@XpressModel(kind="new", pattern="delegate",select="IfcClassification")
-class DelegateIfcClassificationIfcClassificationReference extends DelegateIfcClassificationReferenceIfcClassificationReferenceSelect {
-	// Containment on declaring side of IfcClassification
-	container IfcClassification referencedSource opposite hasReferences	
-}
-
 @GenModel(documentation="Inverse delegation helper between IfcClassificationReference and IfcClassificationReference")
 @XpressModel(kind="new", pattern="delegate",select="IfcClassificationReference")
 class DelegateIfcClassificationReferenceIfcClassificationReference extends DelegateIfcClassificationReferenceIfcClassificationReferenceSelect {
 	// Containment on declaring side of IfcClassificationReference
 	container IfcClassificationReference referencedSource opposite hasReferences	
+}
+
+@GenModel(documentation="Inverse delegation helper between IfcClassification and IfcClassificationReference")
+@XpressModel(kind="new", pattern="delegate",select="IfcClassification")
+class DelegateIfcClassificationIfcClassificationReference extends DelegateIfcClassificationReferenceIfcClassificationReferenceSelect {
+	// Containment on declaring side of IfcClassification
+	container IfcClassification referencedSource opposite hasReferences	
 }
 
 @XpressModel(kind="new", pattern="delegate")
@@ -16706,18 +16706,18 @@ interface DelegateIfcRelSpaceBoundaryIfcSpaceBoundarySelect {
 	refers IfcRelSpaceBoundary ifcRelSpaceBoundary opposite relatingSpace
 }
 
-@GenModel(documentation="Inverse delegation helper between IfcExternalSpatialElement and IfcRelSpaceBoundary")
-@XpressModel(kind="new", pattern="delegate",select="IfcExternalSpatialElement")
-class DelegateIfcExternalSpatialElementIfcRelSpaceBoundary extends DelegateIfcRelSpaceBoundaryIfcSpaceBoundarySelect {
-	// Containment on declaring side of IfcExternalSpatialElement
-	container IfcExternalSpatialElement relatingSpace opposite boundedBy	
-}
-
 @GenModel(documentation="Inverse delegation helper between IfcSpace and IfcRelSpaceBoundary")
 @XpressModel(kind="new", pattern="delegate",select="IfcSpace")
 class DelegateIfcSpaceIfcRelSpaceBoundary extends DelegateIfcRelSpaceBoundaryIfcSpaceBoundarySelect {
 	// Containment on declaring side of IfcSpace
 	container IfcSpace relatingSpace opposite boundedBy	
+}
+
+@GenModel(documentation="Inverse delegation helper between IfcExternalSpatialElement and IfcRelSpaceBoundary")
+@XpressModel(kind="new", pattern="delegate",select="IfcExternalSpatialElement")
+class DelegateIfcExternalSpatialElementIfcRelSpaceBoundary extends DelegateIfcRelSpaceBoundaryIfcSpaceBoundarySelect {
+	// Containment on declaring side of IfcExternalSpatialElement
+	container IfcExternalSpatialElement relatingSpace opposite boundedBy	
 }
 		
 
@@ -16759,18 +16759,18 @@ interface DelegateIfcRelAssociatesMaterialIfcMaterialSelect {
 	refers IfcRelAssociatesMaterial ifcRelAssociatesMaterial opposite relatingMaterial
 }
 
-@GenModel(documentation="Inverse delegation helper between IfcMaterialUsageDefinition and IfcRelAssociatesMaterial")
-@XpressModel(kind="new", pattern="delegate",select="IfcMaterialUsageDefinition")
-class DelegateIfcMaterialUsageDefinitionIfcRelAssociatesMaterial extends DelegateIfcRelAssociatesMaterialIfcMaterialSelect {
-	// Containment on declaring side of IfcMaterialUsageDefinition
-	container IfcMaterialUsageDefinition relatingMaterial opposite associatedTo	
-}
-
 @GenModel(documentation="Inverse delegation helper between IfcMaterialDefinition and IfcRelAssociatesMaterial")
 @XpressModel(kind="new", pattern="delegate",select="IfcMaterialDefinition")
 class DelegateIfcMaterialDefinitionIfcRelAssociatesMaterial extends DelegateIfcRelAssociatesMaterialIfcMaterialSelect {
 	// Containment on declaring side of IfcMaterialDefinition
 	container IfcMaterialDefinition relatingMaterial opposite associatedTo	
+}
+
+@GenModel(documentation="Inverse delegation helper between IfcMaterialUsageDefinition and IfcRelAssociatesMaterial")
+@XpressModel(kind="new", pattern="delegate",select="IfcMaterialUsageDefinition")
+class DelegateIfcMaterialUsageDefinitionIfcRelAssociatesMaterial extends DelegateIfcRelAssociatesMaterialIfcMaterialSelect {
+	// Containment on declaring side of IfcMaterialUsageDefinition
+	container IfcMaterialUsageDefinition relatingMaterial opposite associatedTo	
 }
 
 @XpressModel(kind="new", pattern="delegate")
@@ -16782,18 +16782,18 @@ interface DelegateIfcRelDeclaresIfcDefinitionSelect {
 	refers IfcRelDeclares ifcRelDeclares opposite relatedDefinitions
 }
 
-@GenModel(documentation="Inverse delegation helper between IfcPropertyDefinition and IfcRelDeclares")
-@XpressModel(kind="new", pattern="delegate",select="IfcPropertyDefinition")
-class DelegateIfcPropertyDefinitionIfcRelDeclares extends DelegateIfcRelDeclaresIfcDefinitionSelect {
-	// Containment on declaring side of IfcPropertyDefinition
-	container IfcPropertyDefinition relatedDefinitions opposite hasContext	
-}
-
 @GenModel(documentation="Inverse delegation helper between IfcObjectDefinition and IfcRelDeclares")
 @XpressModel(kind="new", pattern="delegate",select="IfcObjectDefinition")
 class DelegateIfcObjectDefinitionIfcRelDeclares extends DelegateIfcRelDeclaresIfcDefinitionSelect {
 	// Containment on declaring side of IfcObjectDefinition
 	container IfcObjectDefinition relatedDefinitions opposite hasContext	
+}
+
+@GenModel(documentation="Inverse delegation helper between IfcPropertyDefinition and IfcRelDeclares")
+@XpressModel(kind="new", pattern="delegate",select="IfcPropertyDefinition")
+class DelegateIfcPropertyDefinitionIfcRelDeclares extends DelegateIfcRelDeclaresIfcDefinitionSelect {
+	// Containment on declaring side of IfcPropertyDefinition
+	container IfcPropertyDefinition relatedDefinitions opposite hasContext	
 }
 
 @XpressModel(kind="new", pattern="delegate")
@@ -16805,18 +16805,18 @@ interface DelegateIfcRelAssociatesIfcDefinitionSelect {
 	refers IfcRelAssociates ifcRelAssociates opposite relatedObjects
 }
 
-@GenModel(documentation="Inverse delegation helper between IfcObjectDefinition and IfcRelAssociates")
-@XpressModel(kind="new", pattern="delegate",select="IfcObjectDefinition")
-class DelegateIfcObjectDefinitionIfcRelAssociates extends DelegateIfcRelAssociatesIfcDefinitionSelect {
-	// Containment on declaring side of IfcObjectDefinition
-	container IfcObjectDefinition relatedObjects opposite hasAssociations	
-}
-
 @GenModel(documentation="Inverse delegation helper between IfcPropertyDefinition and IfcRelAssociates")
 @XpressModel(kind="new", pattern="delegate",select="IfcPropertyDefinition")
 class DelegateIfcPropertyDefinitionIfcRelAssociates extends DelegateIfcRelAssociatesIfcDefinitionSelect {
 	// Containment on declaring side of IfcPropertyDefinition
 	container IfcPropertyDefinition relatedObjects opposite hasAssociations	
+}
+
+@GenModel(documentation="Inverse delegation helper between IfcObjectDefinition and IfcRelAssociates")
+@XpressModel(kind="new", pattern="delegate",select="IfcObjectDefinition")
+class DelegateIfcObjectDefinitionIfcRelAssociates extends DelegateIfcRelAssociatesIfcDefinitionSelect {
+	// Containment on declaring side of IfcObjectDefinition
+	container IfcObjectDefinition relatedObjects opposite hasAssociations	
 }
 
 @XpressModel(kind="new", pattern="delegate")
@@ -16828,18 +16828,18 @@ interface DelegateIfcPresentationLayerAssignmentIfcLayeredItem {
 	refers IfcPresentationLayerAssignment ifcPresentationLayerAssignment opposite assignedItems
 }
 
-@GenModel(documentation="Inverse delegation helper between IfcRepresentationItem and IfcPresentationLayerAssignment")
-@XpressModel(kind="new", pattern="delegate",select="IfcRepresentationItem")
-class DelegateIfcRepresentationItemIfcPresentationLayerAssignment extends DelegateIfcPresentationLayerAssignmentIfcLayeredItem {
-	// Containment on declaring side of IfcRepresentationItem
-	container IfcRepresentationItem assignedItems opposite layerAssignment	
-}
-
 @GenModel(documentation="Inverse delegation helper between IfcRepresentation and IfcPresentationLayerAssignment")
 @XpressModel(kind="new", pattern="delegate",select="IfcRepresentation")
 class DelegateIfcRepresentationIfcPresentationLayerAssignment extends DelegateIfcPresentationLayerAssignmentIfcLayeredItem {
 	// Containment on declaring side of IfcRepresentation
 	container IfcRepresentation assignedItems opposite layerAssignments	
+}
+
+@GenModel(documentation="Inverse delegation helper between IfcRepresentationItem and IfcPresentationLayerAssignment")
+@XpressModel(kind="new", pattern="delegate",select="IfcRepresentationItem")
+class DelegateIfcRepresentationItemIfcPresentationLayerAssignment extends DelegateIfcPresentationLayerAssignmentIfcLayeredItem {
+	// Containment on declaring side of IfcRepresentationItem
+	container IfcRepresentationItem assignedItems opposite layerAssignment	
 }
 
 @XpressModel(kind="new", pattern="delegate")
@@ -16913,18 +16913,18 @@ interface DelegateIfcShapeAspectIfcProductRepresentationSelect {
 	refers IfcShapeAspect ifcShapeAspect opposite partOfProductDefinitionShape
 }
 
-@GenModel(documentation="Inverse delegation helper between IfcProductDefinitionShape and IfcShapeAspect")
-@XpressModel(kind="new", pattern="delegate",select="IfcProductDefinitionShape")
-class DelegateIfcProductDefinitionShapeIfcShapeAspect extends DelegateIfcShapeAspectIfcProductRepresentationSelect {
-	// Containment on declaring side of IfcProductDefinitionShape
-	container IfcProductDefinitionShape partOfProductDefinitionShape opposite hasShapeAspects	
-}
-
 @GenModel(documentation="Inverse delegation helper between IfcRepresentationMap and IfcShapeAspect")
 @XpressModel(kind="new", pattern="delegate",select="IfcRepresentationMap")
 class DelegateIfcRepresentationMapIfcShapeAspect extends DelegateIfcShapeAspectIfcProductRepresentationSelect {
 	// Containment on declaring side of IfcRepresentationMap
 	container IfcRepresentationMap partOfProductDefinitionShape opposite hasShapeAspects	
+}
+
+@GenModel(documentation="Inverse delegation helper between IfcProductDefinitionShape and IfcShapeAspect")
+@XpressModel(kind="new", pattern="delegate",select="IfcProductDefinitionShape")
+class DelegateIfcProductDefinitionShapeIfcShapeAspect extends DelegateIfcShapeAspectIfcProductRepresentationSelect {
+	// Containment on declaring side of IfcProductDefinitionShape
+	container IfcProductDefinitionShape partOfProductDefinitionShape opposite hasShapeAspects	
 }
 
 @XpressModel(kind="new", pattern="delegate")
