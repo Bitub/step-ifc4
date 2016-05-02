@@ -8243,7 +8243,7 @@ class IfcComplexPropertyTemplate extends IfcPropertyTemplate {
 class IfcCompositeCurve extends IfcBoundedCurve {
 
   @GenModel(documentation="Attribute definition of Segments")
-  @P21 @Ecore(^unique="false") refers IfcCompositeCurveSegment[] segments opposite usingCurves
+  @P21 refers IfcCompositeCurveSegment[] segments opposite usingCurves
   
   @GenModel(documentation="Attribute definition of SelfIntersect")
   @P21 Logical selfIntersect
@@ -10436,13 +10436,13 @@ class IfcGeometricSet extends IfcGeometricRepresentationItem {
 class IfcGrid extends IfcProduct {
 
   @GenModel(documentation="Attribute definition of UAxes")
-  @P21 @Ecore(^unique="false") refers IfcGridAxis[] uAxes opposite partOfU
+  @P21 refers IfcGridAxis[] uAxes opposite partOfU
   
   @GenModel(documentation="Attribute definition of VAxes")
-  @P21 @Ecore(^unique="false") refers IfcGridAxis[] vAxes opposite partOfV
+  @P21 refers IfcGridAxis[] vAxes opposite partOfV
   
   @GenModel(documentation="Attribute definition of WAxes")
-  @P21 @Ecore(^unique="false") refers IfcGridAxis[] wAxes opposite partOfW
+  @P21 refers IfcGridAxis[] wAxes opposite partOfW
   
   @GenModel(documentation="Attribute definition of PredefinedType")
   @P21 IfcGridTypeEnum predefinedType
@@ -11189,7 +11189,7 @@ class IfcMaterialLayer extends IfcMaterialDefinition {
 class IfcMaterialLayerSet extends IfcMaterialDefinition {
 
   @GenModel(documentation="Attribute definition of MaterialLayers")
-  @P21 @Ecore(^unique="false") refers IfcMaterialLayer[] materialLayers opposite toMaterialLayerSet
+  @P21 refers IfcMaterialLayer[] materialLayers opposite toMaterialLayerSet
   
   @GenModel(documentation="Attribute definition of LayerSetName")
   @P21 String layerSetName
@@ -11279,7 +11279,7 @@ class IfcMaterialProfileSet extends IfcMaterialDefinition {
   @P21 String description
   
   @GenModel(documentation="Attribute definition of MaterialProfiles")
-  @P21 @Ecore(^unique="false") refers IfcMaterialProfile[] materialProfiles opposite toMaterialProfileSet
+  @P21 refers IfcMaterialProfile[] materialProfiles opposite toMaterialProfileSet
   
   @GenModel(documentation="Attribute definition of CompositeProfile")
   @P21 refers IfcCompositeProfileDef compositeProfile
@@ -11663,7 +11663,7 @@ class IfcOrganization {
   @P21 @Ecore(^unique="false") refers IfcActorRole[] roles
   
   @GenModel(documentation="Attribute definition of Addresses")
-  @P21 @Ecore(^unique="false") refers IfcAddress[] addresses opposite ofOrganization
+  @P21 refers IfcAddress[] addresses opposite ofOrganization
   
   @GenModel(documentation="Attribute definition of IsRelatedBy")
   refers unordered unique IfcOrganizationRelationship[] isRelatedBy opposite relatedOrganizations
@@ -11858,7 +11858,7 @@ class IfcPerson {
   @P21 @Ecore(^unique="false") refers IfcActorRole[] roles
   
   @GenModel(documentation="Attribute definition of Addresses")
-  @P21 @Ecore(^unique="false") refers IfcAddress[] addresses opposite ofPerson
+  @P21 refers IfcAddress[] addresses opposite ofPerson
   
   @GenModel(documentation="Attribute definition of EngagedIn")
   refers unordered unique IfcPersonAndOrganization[] engagedIn opposite thePerson
@@ -12341,7 +12341,7 @@ abstract class IfcProductRepresentation {
   @P21 String description
   
   @GenModel(documentation="Attribute definition of Representations")
-  @P21 @Ecore(^unique="false") refers IfcRepresentation[] representations opposite ofProductRepresentation
+  @P21 refers IfcRepresentation[] representations opposite ofProductRepresentation
   
 }
 
@@ -13616,7 +13616,7 @@ class IfcRelNests extends IfcRelDecomposes {
   @P21 refers IfcObjectDefinition relatingObject opposite isNestedBy
   
   @GenModel(documentation="Attribute definition of RelatedObjects")
-  @P21 @Ecore(^unique="false") refers IfcObjectDefinition[] relatedObjects opposite nests
+  @P21 refers IfcObjectDefinition[] relatedObjects opposite nests
   
 }
 
@@ -14153,7 +14153,7 @@ class IfcShadingDeviceType extends IfcBuildingElementType {
 class IfcShapeAspect {
 
   @GenModel(documentation="Attribute definition of ShapeRepresentations")
-  @P21 @Ecore(^unique="false") refers IfcShapeModel[] shapeRepresentations opposite ofShapeAspect
+  @P21 refers IfcShapeModel[] shapeRepresentations opposite ofShapeAspect
   
   @GenModel(documentation="Attribute definition of Name")
   @P21 String name
@@ -15137,7 +15137,7 @@ class IfcSurfaceStyleShading extends IfcPresentationItem {
 class IfcSurfaceStyleWithTextures extends IfcPresentationItem {
 
   @GenModel(documentation="Attribute definition of Textures")
-  @P21 @Ecore(^unique="false") refers IfcSurfaceTexture[] textures opposite usedInStyles
+  @P21 refers IfcSurfaceTexture[] textures opposite usedInStyles
   
 }
 
@@ -15695,7 +15695,7 @@ class IfcTextStyleTextModel extends IfcPresentationItem {
 abstract class IfcTextureCoordinate extends IfcPresentationItem {
 
   @GenModel(documentation="Attribute definition of Maps")
-  @P21 @Ecore(^unique="false") refers IfcSurfaceTexture[] maps opposite isMappedBy
+  @P21 refers IfcSurfaceTexture[] maps opposite isMappedBy
   
 }
 
@@ -16133,7 +16133,7 @@ class IfcVirtualElement extends IfcElement {
 class IfcVirtualGridIntersection {
 
   @GenModel(documentation="Attribute definition of IntersectingAxes")
-  @P21 @Ecore(^unique="false") refers IfcGridAxis[] intersectingAxes opposite hasIntersections
+  @P21 refers IfcGridAxis[] intersectingAxes opposite hasIntersections
   
   @GenModel(documentation="Attribute definition of OffsetDistances")
   @P21 double[] offsetDistances
