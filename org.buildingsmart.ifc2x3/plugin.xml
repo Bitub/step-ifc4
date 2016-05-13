@@ -24,7 +24,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated ifc2x3.exp -->
       <package
-            uri="http://www.bitub.de/IFC4"
+            uri="http://www.bitub.de/IFC2x3"
             class="org.buildingsmart.ifc2x3.Ifc2x3Package"
             genModel="model/ifc2x3.exp.xcore"/>
    </extension>
